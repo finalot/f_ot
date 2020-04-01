@@ -111,3 +111,34 @@ buildNumber.properties
 .flattened-pom.xml
 
 # End of https://www.gitignore.io/api/java,maven,eclipse
+.classpath
+.classpath
+.classpath
+.classpath
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/org.eclipse.wst.validation.prefs
+.settings/org.springframework.ide.eclipse.beans.core.prefs
+.settings/org.springframework.ide.eclipse.core.prefs
+.springBeans
+pom.xml
+src/main/webapp/resources/fonts/ionicons-2.0.1/src/mouse.svg
+src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml
+src/main/webapp/WEB-INF/views/admin/.project
+src/main/webapp/WEB-INF/views/admin/.settings/.jsdtscope
+src/main/webapp/WEB-INF/web.xml
+src/test/resources/log4j.xml
+target/classes/log4j.xml
+target/classes/mappers/board-mapper.xml
+target/classes/mappers/member-mapper.xml
+target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+target/m2e-wtp/web-resources/META-INF/maven/com.kh/ot/pom.xml
+target/test-classes/log4j.xml
+.classpath
+.classpath
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.m2e.core.prefs
+*.prefs
+*.prefs

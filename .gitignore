@@ -13,7 +13,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-
+target/
 META-INF/ 
 
 # External tool builders
@@ -98,7 +98,7 @@ META-INF/
 hs_err_pid*
 
 ### Maven ###
-target\
+
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup

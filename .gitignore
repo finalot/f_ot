@@ -13,7 +13,7 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-
+target/
 META-INF/ 
 
 # External tool builders
@@ -98,7 +98,7 @@ META-INF/
 hs_err_pid*
 
 ### Maven ###
-target\
+
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
@@ -112,6 +112,7 @@ buildNumber.properties
 
 # End of https://www.gitignore.io/api/java,maven,eclipse
 .classpath
+<<<<<<< HEAD
 .classpath
 .classpath
 .classpath
@@ -142,3 +143,14 @@ target/test-classes/log4j.xml
 .settings/org.eclipse.m2e.core.prefs
 *.prefs
 *.prefs
+=======
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/org.eclipse.wst.validation.prefs
+target/classes/com/kh/ot/HomeController.class
+target/classes/mappers/board-mapper.xml
+target/classes/mappers/member-mapper.xml
+target/classes/mybatis-config.xml
+target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+>>>>>>> d5d3cc284950225222681a81771112d9d11be139

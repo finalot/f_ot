@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+
+body {
+	font-weight : 700;
+}
+
+#memberInf {
+	width: 100%;
+	margin : 5% 5% 5% 15%;	
+	
+}
+#container {
+	margin : 0 auto;
+}
+
+#contents {
+	width : 70%;
+	margin : 50px auto 100px;
+}
+
+.titleArea {
+    min-height: 30px;
+    margin: 10px 0 60px;
+    text-align: center;
+}
+
+.titleArea h2 {
+	font-family: 'HelveticaLTPro','Arial';
+    font-size: 39px;
+    color: black;
+    line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 600;
+        position: relative;
+    top: -65px;
+}
+
+.mypage_top span {
+	font-weight : 900;
+	font-size : 17px;
+}

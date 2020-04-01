@@ -111,3 +111,13 @@ buildNumber.properties
 .flattened-pom.xml
 
 # End of https://www.gitignore.io/api/java,maven,eclipse
+.classpath
+.settings/org.eclipse.jdt.core.prefs
+.settings/org.eclipse.wst.common.component
+.settings/org.eclipse.wst.common.project.facet.core.xml
+.settings/org.eclipse.wst.validation.prefs
+target/classes/com/kh/ot/HomeController.class
+target/classes/mappers/board-mapper.xml
+target/classes/mappers/member-mapper.xml
+target/classes/mybatis-config.xml
+target/m2e-wtp/web-resources/META-INF/MANIFEST.MF

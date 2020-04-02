@@ -204,8 +204,8 @@
 		<button class="header-icon1 js-show-header-dropdown" style="width:88%;height:12%;background:snow;margin-top:-650%;border-radius:10%;" >
 			
 					<div class="header-wrapicon2 m-r-13" style="width:75%;height:75%;">
-						<img style="border-radius:10%;" src="<c:url value="/resources/images/icons/icon-header-02.png"/>" onmouseover="this.src='images/icons/icon-header-02-2.png'"
-						onmouseout="this.src='images/icons/icon-header-02.png'" class="header-icon1 js-show-header-dropdown" alt="ICON" >
+						<img style="border-radius:10%;" src="<c:url value="/resources/images/icons/icon-header-02.png"/>" onmouseover="this.src='/ot/resources/images/icons/icon-header-02-2.png'"
+						onmouseout="this.src='/ot/resources/images/icons/icon-header-02.png'" class="header-icon1 js-show-header-dropdown" alt="ICON" >
 						
 						<!-- <img src="기본 이미지 주소" onmouseover="this.src='마우스 오버 상태의 이미지 주소'" 
 						onmouseout="this.src='기본 이미지 주소'"> -->
@@ -294,28 +294,28 @@
 		<button style="width:88%;height:12%;background:snow;margin-top:-430%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
 		<a class="symbol-btn-back-to-top" href="index.jsp" >
 			<img style="border-radius:10%;" src="<c:url value="/resources/images/icons/icon-header-03.png"/>" class="header-icon1" alt="ICON"
-				onmouseover="this.src='images/icons/icon-header-03-3.png'"
-				onmouseout="this.src='images/icons/icon-header-03.png'">
+				onmouseover="this.src='/ot/resources/images/icons/icon-header-03-3.png'"
+				onmouseout="this.src='/ot/resources/images/icons/icon-header-03.png'">
 		</a></button>
 		
 		<button style="width:88%;height:12%;background:snow;margin-top:-210%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
 		<a class="symbol-btn-back-to-top" href="/ot/mypage_wishList.jsp" >
 			<img style="border-radius:10%;" src="<c:url value="/resources/images/icons/icon-header-04.png"/>" class="header-icon1" alt="ICON"
-				onmouseover="this.src='images/icons/icon-header-04-4.png'"
-				onmouseout="this.src='images/icons/icon-header-04.png'">
+				onmouseover="this.src='/ot/resources/images/icons/icon-header-04-4.png'"
+				onmouseout="this.src='/ot/resources/images/icons/icon-header-04.png'">
 		</a></button>
 			
 		<button style="width:88%;height:12%;background:snow;margin-top:10%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
 		<a class="header-wrapicon1 dis-block"href="/ot/mypage.jsp" >
 				<img style="border-radius:10%;" src="<c:url value="/resources/images/icons/icon-header-01.png"/>" class="header-icon1" alt="ICON"
-				onmouseover="this.src='/ot/resoursec/images/icons/icon-header-01-1.png'"
-				onmouseout="this.src='/ot/resoursec/images/icons/icon-header-01.png'">
+				onmouseover="this.src='/ot/resources/images/icons/icon-header-01-1.png'"
+				onmouseout="this.src='/ot/resources/images/icons/icon-header-01.png'">
 			</a></button>
 		
 		<button class="chatBtn" style="width:88%;height:12%;margin-top:230%;margin-left:-88%;border-radius:10%;">
 			<img  style="border-radius:10%;" src="images/icons/icon-header-05.png" class="header-icon1" alt="ICON"
-				onmouseover="this.src='/ot/resoursec/images/icons/icon-header-05-5.png'"
-				onmouseout="this.src='/ot/resoursec/images/icons/icon-header-05.png'">
+				onmouseover="this.src='/ot/resources/images/icons/icon-header-05-5.png'"
+				onmouseout="this.src='/ot/resources/images/icons/icon-header-05.png'">
 		</button>
 		<button style="width:88%;height:12%;background:snow;margin-top:450%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
 		<a class="symbol-btn-back-to-top" href="index.jsp" >

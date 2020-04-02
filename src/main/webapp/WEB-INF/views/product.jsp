@@ -7,41 +7,41 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="/ot/resources/images/icons/favicon.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/elegant-font/html-css/style.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/slick/slick.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/noui/nouislider.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/noui/nouislider.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/css/main.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
 
 	<!-- Header -->
-	<%@include file="header.jsp" %>
+	<jsp:include page="header.jsp" >
 
 	<!-- Title Page -->
-	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(images/heading-pages-02.jpg);">
+	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(/ot/resources/images/heading-pages-02.jpg);">
 		<h2 class="l-text2 t-center">
 			OT.CLOTHING
 		</h2>
@@ -76,7 +76,7 @@
 							</li>
 
 							<li class="p-t-4">
-								<a href="#" class="s-text13">
+								<a href="<c:" class="s-text13">
 									<small>후디</small>
 								</a>
 							</li>
@@ -221,7 +221,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/oT/clothing/t_nasi/basic_crop_color_nasi/basic_crop_color_nasi.webp" alt="IMG-PRODUCT">
+									<img src="/ot/resources/images/oT/clothing/t_nasi/basic_crop_color_nasi/basic_crop_color_nasi.webp" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -265,7 +265,7 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-									<img src="images/oT/clothing/t_nasi/numb_lettering_t/numb_lettering_t.webp" alt="IMG-PRODUCT">
+									<img src="/ot/resources/images/oT/clothing/t_nasi/numb_lettering_t/numb_lettering_t.webp" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -304,7 +304,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp" alt="IMG-PRODUCT">
+									<img src="/ot/resources/images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -347,7 +347,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp" alt="IMG-PRODUCT">
+									<img src="/ot/resources/images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -390,7 +390,7 @@
 						<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-									<img src="images/oT/clothing/t_nasi/basic_crop_color_nasi/basic_crop_color_nasi.webp" alt="IMG-PRODUCT">
+									<img src="/ot/resources/images/oT/clothing/t_nasi/basic_crop_color_nasi/basic_crop_color_nasi.webp" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -434,7 +434,7 @@
 					<div class="col-sm-12 col-md-6 col-lg-4 p-b-50">
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-									<img src="images/oT/clothing/t_nasi/numb_lettering_t/numb_lettering_t.webp" alt="IMG-PRODUCT">
+									<img src="/ot/resources/images/oT/clothing/t_nasi/numb_lettering_t/numb_lettering_t.webp" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -473,7 +473,7 @@
 							<!-- 기본프로덕트블록 샘플 -->
 							<div class="block2">
 								<div class="block2-img wrap-pic-w of-hidden pos-relative">
-									<img src="images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp" alt="IMG-PRODUCT">
+									<img src="/ot/resources/images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp" alt="IMG-PRODUCT">
 
 									<div class="block2-overlay trans-0-4">
 										<a href="#" class="block2-btn-addwishlist hov-pointer trans-0-4">
@@ -524,7 +524,7 @@
 
 
 	<!-- Footer -->
-	<%@include file="footer.jsp" %>
+	<jsp:include page="footer.jsp">
 
 
 
@@ -542,14 +542,14 @@
 
 
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/jquery/jquery-3.2.1.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/animsition/js/animsition.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/animsition/js/animsition.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
-	<script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/bootstrap/js/bootstrap.min.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/select2/select2.min.js"></script>
 	<script type="text/javascript">
 		$(".selection-1").select2({
 			minimumResultsForSearch: 20,
@@ -562,13 +562,13 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/daterangepicker/moment.min.js"></script>
-	<script type="text/javascript" src="vendor/daterangepicker/daterangepicker.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/daterangepicker/moment.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/daterangepicker/daterangepicker.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/slick-custom.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/js/slick-custom.js"></script>
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/sweetalert/sweetalert.min.js"></script>
 	<script type="text/javascript">
 		$('.block2-btn-addcart').each(function(){
 			var nameProduct = $(this).parent().parent().parent().find('.block2-name').html();
@@ -586,7 +586,7 @@
 	</script>
 
 <!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/noui/nouislider.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/noui/nouislider.min.js"></script>
 	<script type="text/javascript">
 		/*[ No ui ]
 	    ===========================================================*/

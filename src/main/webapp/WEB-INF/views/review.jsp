@@ -465,47 +465,47 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-<link rel="icon" type="image/png" href="images/icons/favicon.png" />
+<link rel="icon" type="image/png" href="/ot/resources/images/icons/favicon.png" />
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="vendor/bootstrap/css/bootstrap.min.css">
+	href="/ot/resources/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	href="/ot/resources/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/themify/themify-icons.css">
+	href="/ot/resources/fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	href="/ot/resources/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/elegant-font/html-css/style.css">
+	href="/ot/resources/fonts/elegant-font/html-css/style.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css"
-	href="vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/animate/animate.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="vendor/animsition/css/animsition.min.css">
+	href="/ot/resources/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="vendor/select2/select2.min.css">
+	href="/ot/resources/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<link rel="stylesheet" type="text/css"
+	href="/ot/resources/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="css/util.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/slick/slick.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="/ot/resources/css/util.css">
+<link rel="stylesheet" type="text/css" href="/ot/resources/css/main.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
 
 	<!-- Header -->
-	<%@include file="header.jsp"%>
+	<jsp:include page="header.jsp">
 
 	<!-- breadcrumb --><br>
-	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: images/heading-pages-01.jpg;">
+	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: /ot/resources/images/heading-pages-01.jpg;">
 		<h1 class="l-text2 t-center w3-center w3-animate-bottom">
 			Review
 		</h1>
@@ -598,7 +598,7 @@
 							<div class="page">
 
 								<img class="." alt="best_review"
-									src="images/oT/common/review.jpg" width="90%"
+									src="/ot/resources/images/oT/common/review.jpg" width="90%"
 									height="auto" style="margin-left:1%;">
 									
 									<br><br>
@@ -1157,12 +1157,12 @@
                         
                         <div class="mySlides" style="display: block;">
                             <div class="numbertext" ><font style="font-size:14px;">1 / 2</font></div>
-                            <img class="contentimgs" src="images/oT/review/review_sample1.jpg" alt="sample1" style="margin-top:-5%;">
+                            <img class="contentimgs" src="/ot/resources/images/oT/review/review_sample1.jpg" alt="sample1" style="margin-top:-5%;">
                         </div>
                         
                         <div class="mySlides">
                             <div class="numbertext"><font style="font-size:14px;">2 / 2</font></div>
-                            <img class="contentimgs" src="images/oT/review/review_sample2.jpg" alt="sample2" style="margin-top:-5%;" >
+                            <img class="contentimgs" src="/ot/resources/images/oT/review/review_sample2.jpg" alt="sample2" style="margin-top:-5%;" >
                         </div>
                         
                
@@ -2913,7 +2913,7 @@
 							<div
 								class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
 								<img
-									src="images/oT/clothing/t_nasi/basic_crop_color_nasi/basic_crop_color_nasi.webp"
+									src="/ot/resources/images/oT/clothing/t_nasi/basic_crop_color_nasi/basic_crop_color_nasi.webp"
 									alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
@@ -2962,7 +2962,7 @@
 							<div
 								class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
 								<img
-									src="images/oT/clothing/t_nasi/numb_lettering_t/numb_lettering_t.webp"
+									src="/ot/resources/images/oT/clothing/t_nasi/numb_lettering_t/numb_lettering_t.webp"
 									alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
@@ -3002,7 +3002,7 @@
 						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
 								<img
-									src="images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp"
+									src="/ot/resources/images/oT/clothing/t_nasi/standard_round_t/standard_round_t.webp"
 									alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
@@ -3049,7 +3049,7 @@
 						<div class="block2">
 							<div
 								class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+								<img src="/ot/resources/images/item-07.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#"
@@ -3084,7 +3084,7 @@
 						<div class="block2">
 							<div
 								class="block2-img wrap-pic-w of-hidden pos-relative block2-labelnew">
-								<img src="images/item-02.jpg" alt="IMG-PRODUCT">
+								<img src="/ot/resources/images/item-02.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#"
@@ -3117,7 +3117,7 @@
 						<!-- Block2 -->
 						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
-								<img src="images/item-03.jpg" alt="IMG-PRODUCT">
+								<img src="/ot/resources/images/item-03.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#"
@@ -3149,7 +3149,7 @@
 						<!-- Block2 -->
 						<div class="block2">
 							<div class="block2-img wrap-pic-w of-hidden pos-relative">
-								<img src="images/item-05.jpg" alt="IMG-PRODUCT">
+								<img src="/ot/resources/images/item-05.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#"
@@ -3183,7 +3183,7 @@
 						<div class="block2">
 							<div
 								class="block2-img wrap-pic-w of-hidden pos-relative block2-labelsale">
-								<img src="images/item-07.jpg" alt="IMG-PRODUCT">
+								<img src="/ot/resources/images/item-07.jpg" alt="IMG-PRODUCT">
 
 								<div class="block2-overlay trans-0-4">
 									<a href="#"
@@ -3220,29 +3220,29 @@
 
 
 <!-- Footer -->
-<%@include file="footer.jsp"%>
+<jsp:include page="footer.jsp">
 
 
 	
 
 	<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/jquery/jquery-3.2.1.min.js"></script>
 	<!--===============================================================================================-->
 	<script type="text/javascript"
 		src="vendor/animsition/js/animsition.min.js"></script>
 	<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/bootstrap/js/popper.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/bootstrap/js/popper.js"></script>
 	<script type="text/javascript"
 		src="vendor/bootstrap/js/bootstrap.min.js"></script>
 	<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/select2/select2.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/select2/select2.min.js"></script>
 	
 	<!--===============================================================================================-->
-	<script type="text/javascript" src="vendor/slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/slick-custom.js"></script>
+	<script type="text/javascript" src="/ot/resources/vendor/slick/slick.min.js"></script>
+	<script type="text/javascript" src="/ot/resources/js/slick-custom.js"></script>
 	<!--===============================================================================================-->
 	<script type="text/javascript"
-		src="vendor/sweetalert/sweetalert.min.js"></script>
+		src="/ot/resources/vendor/sweetalert/sweetalert.min.js"></script>
 	<script type="text/javascript">
 		$('.block2-btn-addcart').each(
 				function() {
@@ -3271,7 +3271,7 @@
 	</script>
 
 	<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+	<script src="/ot/resources/js/main.js"></script>
 	
 	<!--============================================리뷰모달===================================================-->
 	<script>

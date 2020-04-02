@@ -7,9 +7,9 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-<link rel="stylesheet" href="./css/mypage_list.css">
-<link rel="stylesheet" href="./css/mypage_basic.css">
-<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+<link rel="stylesheet" href="/ot/resources/css/mypage_list.css">
+<link rel="stylesheet" href="/ot/resources/css/mypage_basic.css">
+<link rel="icon" type="image/png" href="/ot/resources/images/icons/favicon.png"/>
 <style>
 
             #container{
@@ -484,44 +484,44 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-<link rel="icon" type="image/png" href="images/icons/favicon.png" />
+<link rel="icon" type="image/png" href="/ot/resources/images/icons/favicon.png" />
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="vendor/bootstrap/css/bootstrap.min.css">
+	href="/ot/resources/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	href="/ot/resources/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/themify/themify-icons.css">
+	href="/ot/resources/fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	href="/ot/resources/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="fonts/elegant-font/html-css/style.css">
+	href="/ot/resources/fonts/elegant-font/html-css/style.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->
-<link rel="stylesheet" type="text/css"
-	href="vendor/css-hamburgers/hamburgers.min.css">
+<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/animate/animate.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="vendor/animsition/css/animsition.min.css">
+	href="/ot/resources/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
-	href="vendor/select2/select2.min.css">
+	href="/ot/resources/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+<link rel="stylesheet" type="text/css"
+	href="/ot/resources/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-<link rel="stylesheet" type="text/css" href="css/util.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/slick/slick.css">
+<!--===============================================================================================-->
+<link rel="stylesheet" type="text/css" href="/ot/resources/css/util.css">
+<link rel="stylesheet" type="text/css" href="/ot/resources/css/main.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition" style="overflow-x:hidden;">
 
 	<!-- Header -->
-	<%@include file="header.jsp"%>
+	<jsp:include page="header.jsp">
 
 	<!-- breadcrumb -->
 	<div class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
@@ -881,7 +881,7 @@ function qna(){
 							<div class="page">
 
 								<img class="." alt="best_review"
-									src="images/oT/common/best_review.jpg" width="100%"
+									src="/ot/resources/images/oT/common/best_review.jpg" width="100%"
 									height="auto" style="margin-left: 2.9%">
 									
 									<br>
@@ -1735,12 +1735,12 @@ function qna(){
                         
                         <div class="mySlides" style="display: block;">
                             <div class="numbertext" ><font style="font-size:14px;">1 / 2</font></div>
-                            <img class="contentimgs" src="images/oT/review/review_sample1.jpg" alt="sample1" style="margin-top:-5%;">
+                            <img class="contentimgs" src="/ot/resources/images/oT/review/review_sample1.jpg" alt="sample1" style="margin-top:-5%;">
                         </div>
                         
                         <div class="mySlides">
                             <div class="numbertext"><font style="font-size:14px;">2 / 2</font></div>
-                            <img class="contentimgs" src="images/oT/review/review_sample2.jpg" alt="sample2" style="margin-top:-5%;" >
+                            <img class="contentimgs" src="/ot/resources/images/oT/review/review_sample2.jpg" alt="sample2" style="margin-top:-5%;" >
                         </div>
                         
                
@@ -2724,29 +2724,29 @@ function qna(){
 }
 </style>
 	<img class="detail_pic"
-		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_1.jpg"
+		src="/ot/resources/images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_1.jpg"
 		alt="IMG-PRODUCT" width="1000" height="auto">
 	<img class="detail_pic"
-		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_3.jpg"
+		src="/ot/resources/images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_3.jpg"
 		alt="IMG-PRODUCT" width="1000" height="auto">
 	<img class="detail_pic"
-		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_2.jpg"
+		src="/ot/resources/images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_2.jpg"
 		alt="IMG-PRODUCT" width="1000" height="auto">
 	<img class="detail_pic"
-		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_5.jpg"
+		src="/ot/resources/images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_5.jpg"
 		alt="IMG-PRODUCT" width="1000" height="auto">
 	<img class="detail_pic"
-		src="images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_4.jpg"
+		src="/ot/resources/images/oT/clothing/t_nasi/detail/basic_crop_color_nasi/basic_crop_color_nasi_4.jpg"
 		alt="IMG-PRODUCT" width="1000" height="auto">
 <!-- 디테일 사진 부분 끝-->
 <div id="washing_tip"></div>
 <br><br>
 <!-- 워싱팁 사진-->
 <img class="detail_pic"
-		src="images/oT/common/washing_tip1.jpg"
+		src="/ot/resources/images/oT/common/washing_tip1.jpg"
 		alt="IMG-PRODUCT" width="1000" height="auto">
 <img class="detail_pic"
-		src="images/oT/common/washing_tip.jpg"
+		src="/ot/resources/images/oT/common/washing_tip.jpg"
 		alt="IMG-PRODUCT" width="1000" height="auto">
 <!-- 워싱팁 끝-->
 <div id="sizeInfo"></div>
@@ -3072,9 +3072,9 @@ function qna(){
 			
 			<div class="xans-element- xans-myshop xans-myshop-orderhistorypaging ec-base-paginate">
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019" class="first">
-					<img src="/ot/images/btn_page_first.gif" alt="첫 페이지"></a>
+					<img src="/ot/resources/images/btn_page_first.gif" alt="첫 페이지"></a>
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019">
-					<img src="/ot/images/btn_page_prev.gif" alt="이전 페이지"></a>
+					<img src="/ot/resources/images/btn_page_prev.gif" alt="이전 페이지"></a>
 					
 					<ol>
 						<li class="xans-record-">
@@ -3083,9 +3083,9 @@ function qna(){
        				</ol>
        				
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019">
-					<img src="/ot/images/btn_page_next.gif" alt="다음 페이지"></a>
+					<img src="/ot/resources/images/btn_page_next.gif" alt="다음 페이지"></a>
 				<a href="?page=1&amp;history_start_date=2019-12-15&amp;history_end_date=2020-03-14&amp;past_year=2019" class="last">
-					<img src="/ot/images/btn_page_last.gif" alt="마지막 페이지"></a>
+					<img src="/ot/resources/images/btn_page_last.gif" alt="마지막 페이지"></a>
 			</div>
 
         </div>
@@ -3425,7 +3425,7 @@ function qna(){
 
 <div style=" width: 160%; margin-left:-30%;">
 <!-- Footer -->
-<%@include file="footer.jsp"%>
+<jsp:include page="footer.jsp">
 </div>
 
 

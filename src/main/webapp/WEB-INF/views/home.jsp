@@ -1148,7 +1148,7 @@
 	<!-- Banner video -->
 	
 				
-	<section class="parallax0 parallax100" style="background-image: url(images/video01.jpg) ;">
+	<section class="parallax0 parallax100" style="background-image: url(/ot/resources/images/video01.jpg) ;">
 	
 		<div class="overlay0 p-t-190 p-b-200">
 			<div class="flex-col-c-m p-l-15 p-r-15">

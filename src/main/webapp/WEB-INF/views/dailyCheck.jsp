@@ -7,8 +7,8 @@
 </style>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-	<link rel="stylesheet" href="./css/dailyCheck.css">
-	 <link rel="stylesheet" href="./css/Login_style.css">	
+	<link rel="stylesheet" href="/ot/resources/css/dailyCheck.css">
+	 <link rel="stylesheet" href="/ot/resources/css/Login_style.css">	
 </head>
 <body>
 <jsp:include page="header.jsp"/>
@@ -61,7 +61,7 @@
 </div>
 	
 <jsp:include page="footer.jsp"/>
-	<script type="text/javascript" src="./js/dailyCheck.js"></script>
+	<script type="text/javascript" src="/ot/resources/js/dailyCheck.js"></script>
 
 
 
@@ -75,7 +75,7 @@ $(function(){
 $('#dailyCheck').click(function(){
 	if($('#checkmark').text() == ""){
 		
-	$('.cal-table td.today').append('<img src="./images/icons/ot.png" alt="로고" style="position:relative;left: 20%;height: auto;width: 60px;">')
+	$('.cal-table td.today').append('<img src="/ot/resources/images/icons/ot.png" alt="로고" style="position:relative;left: 20%;height: auto;width: 60px;">')
 	}else{
 		alert('이미출석체크 하였습니다')
 	};

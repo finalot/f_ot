@@ -91,7 +91,7 @@ font-size: 9px !important;
 						</ul></li>
 					<span class="linedivide1"></span>
 
-					<li><a href="index.jsp">CLOTHING</a>
+					<li><a href="clothing.do">CLOTHING</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="index.jsp">티셔츠/나시</a></li>
@@ -314,7 +314,7 @@ font-size: 9px !important;
 							</ul></li>
 						<span class="linedivide1"></span>
 
-						<li><a href="index.jsp">CLOTHING</a>
+						<li><a href="clothing.do">CLOTHING</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 								<li><a href="index.jsp">티셔츠/나시</a></li>
@@ -522,7 +522,7 @@ font-size: 9px !important;
 
 
 					<li class="item-menu-mobile" style="background: black;"><a
-						href="index.jsp">CLOTHING</a>
+						href="clothing.do">CLOTHING</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">티셔츠/나시</a></li>
 							<li><a href="index.jsp">맨투맨</a></li>
@@ -597,7 +597,7 @@ font-size: 9px !important;
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=108">CLOTHING</a>
+						<a href="clothing.do">CLOTHING</a>
 					</h4>
 					<ul>
 						<li><a href="index.jsp">티셔츠/나시</a></li>

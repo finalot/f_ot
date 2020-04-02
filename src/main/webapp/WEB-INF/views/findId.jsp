@@ -8,17 +8,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>winter</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="/ot/resources/img/favicon.png">
     <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="./css/Login_bootstrap.min.css">
+   <link rel="stylesheet" href="/ot/resources/css/Login_bootstrap.min.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="./css/Login_style.css">
-    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="/ot/resources/css/Login_style.css">
+    <link rel="stylesheet" href="/ot/resources/css/popup.css">
 
 </head>
 
 <body class="bg-white">
-  <%@include file="header.jsp"%>
+	<jsp:include page="header.jsp"/>
    <section class="login_part section_padding">
         <div class="container" align="center">
             <div class="row align-items-center" style="position: relative; right: 26%;">
@@ -35,11 +35,11 @@
                                
                                 <div class="col-md-12 form-group p_star">
                                     <span style="padding-right: 20px;">회원이름 :</span> <input style="display: inline-block;
-                                    width: 50%;" type="text" class="form-control" id="name" name="name" value="">
+                                    width: 50%;" type="text" class="form-control" id="memName" name="name" value="">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
                                    <span style="padding-right: 20px;">생년월일 :</span><input style="display: inline-block;
-                                   width: 50%;" type="text" class="form-control" id="birthday" name="birthday" value="" maxlength="6">
+                                   width: 50%;" type="text" class="form-control" id="memSsn" name="birthday" value="" maxlength="6">
                                 </div>
                                 <div class="col-md-12 form-group">
                                     <div class="creat_account d-flex align-items-center">
@@ -76,7 +76,7 @@
 </div> 
        
     </section>
-       <%@include file="footer.jsp" %>
+      <jsp:include page="footer.jsp"/>
 
        <script>
      
@@ -86,13 +86,14 @@
 	        layer_popup($href);
     	  
 	        $.ajax({
-    		  url : "idDuplicate.me",
-    		  type: "post",
-    		  data : {name : $('#name').val(), birthday : $('#birthday').val()},
+    		  url : "findId.do",
+			  dataType:"json",
+    		  data : {memName : $('#memName').val(), memSsn : $('#memSsn').val()},
     		  success : function(data){
-    			  if(data == 'null'){
-    			 $('#check_ment').html('떙떙회원님의 아이디는 떙떙입니다.'); 	
-    			  }else{
+    			  if(data != "null"){
+    			 $('#check_ment').html(''+data.memName+'님의 아이디는 '+data.memId+'입니다.'); 	
+    			  }
+    			  else if(data == "null"){
     			  $('#check_ment').html('아이디가 존재하지 않습니다.'); 	
     			  }
     		  },

@@ -22,4 +22,9 @@ public class MemberServiceImpl implements MemberService{
 		return mDao.loginMember(id,pwd);
 	}
 
+	@Override
+	public Member findId(String memName, String memSsn) {
+		return mDao.findId(memName,memSsn);
+	}
+
 }

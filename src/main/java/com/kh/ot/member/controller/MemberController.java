@@ -7,6 +7,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Controller;
@@ -69,6 +70,12 @@ public class MemberController {
 		return "mypage";
 	}
 
+	@RequestMapping("findIdView.do")
+	public String findIdView() {
+		
+		return "findId"; 
+	}
+	
 	/**
 	 * @작성일 : 2020-04-02
 	 * @작성자 : 문태환
@@ -109,6 +116,38 @@ public class MemberController {
 		  
 			return "home";
 		}
-	 
+	
+	
+	
+	/**
+	 * @작성일  : 2020. 4. 2.
+	 * @작성자  : 문태환
+	 * @내용 	: 아이디 찾기
+	 * @param response
+	 * @param memName
+	 * @param memSsn
+	 * @throws IOException
+	 */
+	@RequestMapping("findId.do")
+	public void findId(HttpServletResponse response, String memName,String memSsn) throws IOException {
+		
+		response.setContentType("application/json; charset=utf-8");
+		JSONObject job = new JSONObject();
+	     PrintWriter out = response.getWriter();
+	     Member m = mService.findId(memName, memSsn);
+		
+	     if(m != null) {
+	    	 job.put("memName",m.getMemName());
+	    	 job.put("memId",m.getMemId());
+
+	    	 out.print(job);
+	     }else {
+	    	 out.print(job);
+	     }
+		 
+		
+		 
+		 
+	}
 
 }

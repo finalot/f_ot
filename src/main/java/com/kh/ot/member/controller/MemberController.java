@@ -70,6 +70,19 @@ public class MemberController {
 	}
 
 	/**
+	 * @작성일  :2020-04-02 
+	 * @작성자  : 우예진
+	 * @내용    :카트페이지 이동
+	 * @return
+	 */
+	@RequestMapping("cart.do")
+	public String cartView() {
+		
+		return "cart";
+	}
+	
+	
+	/**
 	 * @작성일 : 2020-04-02
 	 * @작성자 : 문태환
 	 * @내용 : 로그인

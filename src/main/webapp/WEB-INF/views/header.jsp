@@ -84,14 +84,40 @@ font-size: 9px !important;
 				<ul class="main_menu">
 
 					<span class="linedivide1"></span>
-
+					<!-- 프로덕트 1부분 경로 설정 -->
+					<c:url var="best" value="product1.do">
+						<c:param name="product1" value="BEST"/>
+					</c:url>
+					<c:url var="clothing" value="product1.do">
+						<c:param name="product1" value="CLOTHING"/>
+					</c:url>
+					<c:url var="outer" value="product1.do">
+						<c:param name="product1" value="OUTER"/>
+					</c:url>
+					<c:url var="shoes" value="product1.do">
+						<c:param name="product1" value="SHOES"/>
+					</c:url>
+					<c:url var="acc" value="product1.do">
+						<c:param name="product1" value="ACC"/>
+					</c:url>
+					<c:url var="event" value="product1.do">
+						<c:param name="product1" value="EVENT"/>
+					</c:url>
+					<!-- 프로덕트 1 부분 경로설정 끝 -->
+					<!-- 프로덕트 2 부분 경로설정  -->
+					<c:url var="event" value="product2.do">
+						<c:param name="product2" value="EVENT"/>
+					</c:url>
+					<!-- 프로덕트 2 부분 경로설정 끝 -->
+					
 					<li><a href="product.jsp">Best20</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="product.jsp">랭킹20</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
-					<li><a href="clothing.do">CLOTHING</a>
+					
+					<li><a href="${clothing }">CLOTHING</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="index.jsp">티셔츠/나시</a></li>
@@ -104,7 +130,7 @@ font-size: 9px !important;
 						</ul></li>
 					<span class="linedivide1"></span>
 
-					<li><a href="index.jsp">OUTER</a>
+					<li><a href="${outer }">OUTER</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="index.jsp">자켓</a></li>
@@ -113,14 +139,14 @@ font-size: 9px !important;
 						</ul></li>
 					<span class="linedivide1"></span>
 
-					<li><a href="product.jsp">SHOES</a>
+					<li><a href="${shoes }">SHOES</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="index.jsp">신발</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
 
-					<li><a href="index.jsp">ACC</a>
+					<li><a href="${acc }">ACC</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 150%;">
 							<li><a href="index.jsp">벨트</a></li>
@@ -132,7 +158,7 @@ font-size: 9px !important;
 						</ul></li>
 					<span class="linedivide1"></span>
 
-					<li class="sale-noti"><a href="index.jsp">EVENT</a>
+					<li class="sale-noti"><a href="${event }">EVENT</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="index.jsp">NEW 5%</a></li>
@@ -231,11 +257,11 @@ font-size: 9px !important;
 		</div>
 	</div>
 	</div>
-
+<c:url var="dailyCheck" value="dailyCheck.do"/>
 	<!-- top noti -->
 	<div class="flex-c-m size22 bg0 s-text21 pos-relative"
 		style="background: black;">
-		출석체크 EVENT! <a href="dailyCheck.jsp" class="s-text22 hov6 p-l-5">
+		출석체크 EVENT! <a href="${dailyCheck }" class="s-text22 hov6 p-l-5">
 			바로가기 </a>
 
 		<button
@@ -314,7 +340,7 @@ font-size: 9px !important;
 							</ul></li>
 						<span class="linedivide1"></span>
 
-						<li><a href="clothing.do">CLOTHING</a>
+						<li><a href="${clothing }">CLOTHING</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 								<li><a href="index.jsp">티셔츠/나시</a></li>
@@ -327,7 +353,7 @@ font-size: 9px !important;
 							</ul></li>
 						<span class="linedivide1"></span>
 
-						<li><a href="index.jsp">OUTER</a>
+						<li><a href="${outer }">OUTER</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 								<li><a href="index.jsp">자켓</a></li>
@@ -336,14 +362,14 @@ font-size: 9px !important;
 							</ul></li>
 						<span class="linedivide1"></span>
 
-						<li><a href="product.jsp">SHOES</a>
+						<li><a href="${shoes }">SHOES</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 								<li><a href="index.jsp">신발</a></li>
 							</ul></li>
 						<span class="linedivide1"></span>
 
-						<li><a href="index.jsp">ACC</a>
+						<li><a href="${acc }">ACC</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 150%;">
 								<li><a href="index.jsp">벨트</a></li>
@@ -355,7 +381,7 @@ font-size: 9px !important;
 							</ul></li>
 						<span class="linedivide1"></span>
 
-						<li class="sale-noti"><a href="index.jsp">EVENT</a>
+						<li class="sale-noti"><a href="${event }">EVENT</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 								<li><a href="index.jsp">NEW 5%</a></li>
@@ -522,7 +548,7 @@ font-size: 9px !important;
 
 
 					<li class="item-menu-mobile" style="background: black;"><a
-						href="clothing.do">CLOTHING</a>
+						href="${clothing }">CLOTHING</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">티셔츠/나시</a></li>
 							<li><a href="index.jsp">맨투맨</a></li>
@@ -535,7 +561,7 @@ font-size: 9px !important;
 					</li>
 
 					<li class="item-menu-mobile" style="background: black;"><a
-						href="index.jsp">OUTER</a>
+						href="${outer }">OUTER</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">자켓</a></li>
 							<li><a href="index.jsp">코트/점퍼</a></li>
@@ -545,7 +571,7 @@ font-size: 9px !important;
 
 
 					<li class="item-menu-mobile" style="background: black;"><a
-						href="index.jsp">SHOES</a>
+						href="${shoes }">SHOES</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">신발</a></li>
 						</ul> <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
@@ -553,7 +579,7 @@ font-size: 9px !important;
 
 
 					<li class="item-menu-mobile" style="background: black;"><a
-						href="index.jsp">ACC</a>
+						href="${acc }">ACC</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">벨트</a></li>
 							<li><a href="index.jsp">안경/선글라스</a></li>
@@ -565,7 +591,7 @@ font-size: 9px !important;
 					</li>
 
 					<li class="item-menu-mobile" style="background: black;"><a
-						class="item-menu-mobile" href="index.jsp">EVENT</a>
+						class="item-menu-mobile" href="${event }">EVENT</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">NEW 5%</a></li>
 							<li><a href="index.jsp">SALE</a></li>
@@ -597,7 +623,7 @@ font-size: 9px !important;
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="clothing.do">CLOTHING</a>
+						<a href="${clothing }">CLOTHING</a>
 					</h4>
 					<ul>
 						<li><a href="index.jsp">티셔츠/나시</a></li>
@@ -611,7 +637,7 @@ font-size: 9px !important;
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=53">OUTER</a>
+						<a href="${outer }">OUTER</a>
 					</h4>
 					<ul>
 						<li><a href="index.jsp">자켓</a></li>
@@ -621,7 +647,7 @@ font-size: 9px !important;
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=25">SHOES</a>
+						<a href="${shoes }">SHOES</a>
 					</h4>
 					<ul>
 						<li><a href="index.jsp">신발</a></li>
@@ -630,7 +656,7 @@ font-size: 9px !important;
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=24">ACC</a>
+						<a href="${acc }">ACC</a>
 					</h4>
 					<ul>
 						<li><a href="index.jsp">벨트</a></li>

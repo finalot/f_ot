@@ -502,7 +502,7 @@
 <body class="animsition">
 
 	<!-- Header -->
-	<jsp:include page="header.jsp">
+	<jsp:include page="header.jsp"/>
 
 	<!-- breadcrumb --><br>
 	<section class="bg-title-page p-t-40 p-b-50 flex-col-c-m" style="background-image: /ot/resources/images/heading-pages-01.jpg;">
@@ -3220,7 +3220,7 @@
 
 
 <!-- Footer -->
-<jsp:include page="footer.jsp">
+<jsp:include page="footer.jsp"/>
 
 
 	

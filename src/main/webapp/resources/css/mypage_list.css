@@ -1562,3 +1562,71 @@ div.nneditor-container {
 .xans-board-modify .ec-base-button {
     margin: 10px 0 40px;
 }
+
+#popup {
+    width: 600px;
+    min-height: 360px;
+}
+
+.ec-base-box.typeMember {
+    padding: 0;
+}
+
+.ec-base-box.typeMember .information {
+    display: table;
+    table-layout: fixed;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ec-base-box.typeMember .information > .title {
+    vertical-align: middle;
+}
+
+.ec-base-box.typeMember .information > .title, .ec-base-box.typeMember .information > .thumbnail {
+    display: table-cell;
+    padding: 0 15px;
+    width: 70px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.ec-base-box.typeMember .information .description {
+    display: table-cell;
+    padding: 0 20px 0 70px;
+    width: auto;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+
+.txtEm {
+    color: #444;
+}
+
+.xans-member-edit .layerLeave h4 {
+    margin: 20px 0 10px;
+    padding: 20px 0 0;
+    border-top: 1px solid #e8e8e8;
+}
+
+.ec-base-layer .content > .ec-base-table table:first-child {
+    margin-top: 0;
+}
+
+.ec-base-layer .ec-base-table table {
+    line-height: 1.4;
+}
+
+textarea {
+    padding: 5px 6px;
+    border: 1px solid #eaeaea;
+    line-height: 1.5;
+}
+
+.xans-member-edit .layerLeave h4 {
+    margin: 20px 0 10px;
+    padding: 20px 0 0;
+    border-top: 1px solid #e8e8e8;
+}
+

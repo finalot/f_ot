@@ -210,7 +210,7 @@
      -->
 
 					<h3 class=" ">기본정보</h3>
-					<p class="required ">
+					<p class="required " style="font-size: 12px;">
 						<img src="/ot/images/req_check.png" alt="필수">
 						필수입력사항
 					</p>
@@ -415,7 +415,7 @@
 										class="displaynone" alt="필수"></th>
 									<td><span id="id_bank_info">[카카오뱅크] 3333023943107 /
 											예금주: 신경섭</span> <a href="#none"
-										onclick="window.open('/myshop/order/account.html','bank_account','width=300,height=300');return false;"><img
+										onclick="window.open('/ot/mypage_member_account.jsp','bank_account','width=600,height=460');return false;"><img
 											src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_account_change.gif"
 											alt="환불계좌변경" id="id_has_bank_img" class=""><img
 											src="//img.echosting.cafe24.com/skin/base_ko_KR/member/btn_account.gif"
@@ -429,19 +429,19 @@
 						<a href="#none" class="yg_btn_140 yg_btn1 yg_btn_border_444"
 							onclick="memberEditAction()" alt="회원정보수정">회원정보수정</a> <a
 							href="/index.html" class="yg_btn_140 yg_btn4" alt="취소">취소</a> <span
-							class="gRight"> <a href="#none" class="yg_btn_140 yg_btn3"
+							class="gRight"> <a href="#none" class="yg_btn_140 yg_btn3" id="memberdel"
 							onclick="memberDelAction(2000, 0, -1)" alt="회원탈퇴">회원탈퇴</a>
 						</span>
 					</div>
 					
 					<div class="layerLeave ec-base-layer" id="eLeaveLayer">
-						<div class="header">
-							<h3>회원탈퇴</h3>
+						<div class="header" style="height:35px; padding: 7px 35px 7px 19px;">
+							<h3 style="margin : 0;">회원탈퇴</h3>
 						</div>
 						<div class="content">
 							<div class="ec-base-box typeMember">
 								<div class="information">
-									<strong class="title">혜택 내역</strong>
+									<strong class="title" style="padding : 0 0 0 15px;">혜택 내역</strong>
 									<div class="description">
 										<ul>
 											<li id="eLeaveLayerMileageText">탈퇴시 보유하고 있는 적립금은 모두
@@ -456,7 +456,7 @@
 									</div>
 								</div>
 							</div>
-							<h4>회원탈퇴 사유</h4>
+							<h4 style="font-size: 12px; font-weight: bold;">회원탈퇴 사유</h4>
 							<div class="ec-base-table typeWrite">
 								<table border="1" summary="">
 									<caption>회원탈퇴 사유</caption>
@@ -468,7 +468,7 @@
 										<tr>
 											<th scope="row">선택</th>
 											<td><select id="leave_reason" name="leave_reason"
-												fw-filter="isFill" fw-label="회원탈퇴 사유" fw-msg="">
+												fw-filter="isFill" fw-label="회원탈퇴 사유" fw-msg="" style="width:auto;">
 													<option value="" selected="selected">-선택하세요-</option>
 													<option value="상품종류가 부족하다">상품종류가 부족하다</option>
 													<option value="상품가격이 비싸다">상품가격이 비싸다</option>
@@ -501,7 +501,7 @@
 							<a href="#none" onclick="$('#eLeaveLayer').hide();"
 								class="yg_btn_30 yg_btn3" alt="취소">취소</a>
 						</div>
-						<a href="#none" class="close" onclick="$('#eLeaveLayer').hide();"><img
+						<a href="#none"  class="close" style="top:-7px; right:-7px;" onclick="$('#eLeaveLayer').hide();"><img
 							src="//img.echosting.cafe24.com/skin/base/common/btn_close.gif"
 							alt="닫기"></a>
 					</div>
@@ -638,6 +638,17 @@
 			var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
 			return re.test(email);
 		}
+	</script>
+	
+	
+	<script>
+	$('#memberdel').click(function() {
+		$('#eLeaveLayer').css('display', 'block');
+	});
+
+	$('.memberclose').click(function() {
+		$('#eLeaveLayer').css('display', 'none');
+	});
 	</script>
 
 </body>

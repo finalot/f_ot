@@ -26,5 +26,7 @@ public class MemberServiceImpl implements MemberService{
 	public Member findId(String memName, String memSsn) {
 		return mDao.findId(memName,memSsn);
 	}
+	
+	
 
 }

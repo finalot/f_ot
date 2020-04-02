@@ -90,10 +90,11 @@
 			  dataType:"json",
     		  data : {memName : $('#memName').val(), memSsn : $('#memSsn').val()},
     		  success : function(data){
-    			  if(data != "null"){
+    			  console.log(data)
+    			  if(data.msg != "error"){
     			 $('#check_ment').html(''+data.memName+'님의 아이디는 '+data.memId+'입니다.'); 	
     			  }
-    			  else if(data == "null"){
+    			  else if(data.msg == "error"){
     			  $('#check_ment').html('아이디가 존재하지 않습니다.'); 	
     			  }
     		  },

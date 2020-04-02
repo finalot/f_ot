@@ -52,7 +52,7 @@
                                     </a>
                                     <div style="display: felx">
                                     <a style="margin-top: 10px;margin-right: 4%;" class="lost_pass" href="findIdView.do">forget ID?</a>
-                                    <a style="margin-top: 10px;margin-right: 15%;padding-right: 13%;" class="lost_pass" href="findpassword.jsp">forget Password?</a>
+                                    <a style="margin-top: 10px;margin-right: 15%;padding-right: 13%;" class="lost_pass" href="findpasswordView.do">forget Password?</a>
                                     </div>
                                 </div>
                         </div>

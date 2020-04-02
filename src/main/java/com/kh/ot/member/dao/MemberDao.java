@@ -43,4 +43,7 @@ public class MemberDao {
 		return (Member)sqlSession.selectOne("memberMapper.findId",m);
 	}
 	
+	
+	
+	
 }

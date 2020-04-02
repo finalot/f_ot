@@ -5,13 +5,20 @@ body {
 	font-weight : 700;
 }
 
-#memberInf {
+#memberInf1 {
 	width: 100%;
-	margin : 5% 5% 5% 15%;	
+	margin-top : 3%;	
 	
 }
 #container {
 	margin : 0 auto;
+}
+.mypage_top {
+	width : 100%;
+	text-align : center;
+	position : relative;
+	right : 37%;
+	margin-top:0%;
 }
 
 #contents {
@@ -21,7 +28,7 @@ body {
 
 .titleArea {
     min-height: 30px;
-    margin: 10px 0 60px;
+    margin: 10px 0 65px;
     text-align: center;
 }
 
@@ -32,8 +39,9 @@ body {
     line-height: 1.2;
     text-transform: uppercase;
     font-weight: 600;
-        position: relative;
-    top: -65px;
+    position: relative;
+    top: -50px;
+    margin-top : 10%;
 }
 
 .mypage_top span {

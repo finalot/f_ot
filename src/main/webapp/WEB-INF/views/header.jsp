@@ -74,7 +74,7 @@ font-size: 9px !important;
 			class="topbar-social-item fa fa-instagram"></a> <a href="#"
 			class="chatBtn"><img
 			style="width: 15px; margin-left: 11px; margin-bottom: 4px;"
-			src="${ chatIcon }"></a> <a href="cart.jsp"><img
+			src="${ chatIcon }"></a> <a href="${cartbutton }"><img
 			style="width: 17px; margin-left: 15px; margin-bottom: 4px;"
 			src="<c:url value="/resources/images/icons/cart.png"/>"></a>
 
@@ -105,64 +105,119 @@ font-size: 9px !important;
 					</c:url>
 					<!-- 프로덕트 1 부분 경로설정 끝 -->
 					<!-- 프로덕트 2 부분 경로설정  -->
-					<c:url var="event" value="product2.do">
-						<c:param name="product2" value="EVENT"/>
+					<c:url var="tnasi" value="product2.do">
+						<c:param name="product2" value="TNASI"/>
 					</c:url>
-					<!-- 프로덕트 2 부분 경로설정 끝 -->
+					<c:url var="mantoman" value="product2.do">
+						<c:param name="product2" value="MANTOMAN"/>
+					</c:url>
+					<c:url var="hoody" value="product2.do">
+						<c:param name="product2" value="HOODY"/>
+					</c:url>
+					<c:url var="pants" value="product2.do">
+						<c:param name="product2" value="PANTS"/>
+					</c:url>
+					<c:url var="neat" value="product2.do">
+						<c:param name="product2" value="NEAT"/>
+					</c:url>
+					<c:url var="onepieceskirt" value="product2.do">
+						<c:param name="product2" value="ONEPIECESKIRT"/>
+					</c:url>
+					<c:url var="shirtblouse" value="product2.do">
+						<c:param name="product2" value="SHIRTBLOUSE"/>
+					</c:url>
+					<c:url var="jacket" value="product2.do">
+						<c:param name="product2" value="JACKET"/>
+					</c:url>
+					<c:url var="coatjumper" value="product2.do">
+						<c:param name="product2" value="COATJUMPER"/>
+					</c:url>
+					<c:url var="cardigan" value="product2.do">
+						<c:param name="product2" value="CARDIGAN"/>
+					</c:url>
+					<c:url var="belt" value="product2.do">
+						<c:param name="product2" value="BELT"/>
+					</c:url>
+					<c:url var="glasses" value="product2.do">
+						<c:param name="product2" value="GLASSES"/>
+					</c:url>
+					<c:url var="hat" value="product2.do">
+						<c:param name="product2" value="HAT"/>
+					</c:url>
+					<c:url var="socks" value="product2.do">
+						<c:param name="product2" value="SOCKS"/>
+					</c:url>
+					<c:url var="accessories" value="product2.do">
+						<c:param name="product2" value="ACCESSORIES"/>
+					</c:url>
+					<c:url var="etc" value="product2.do">
+						<c:param name="product2" value="ETC"/>
+					</c:url>
+					<c:url var="new5" value="product2.do">
+						<c:param name="product2" value="NEW5"/>
+					</c:url>
+					<c:url var="sale" value="product2.do">
+						<c:param name="product2" value="SALE"/>
+					</c:url>
 					
-					<li><a href="product.jsp">Best20</a>
+					<!-- 프로덕트 2 부분 경로설정 끝 -->
+					<!-- 기타 버튼 경로설정 -->
+					<c:url var="review" value="review.do"/>
+					<c:url var="cartbutton" value="cartbutton.do"/>
+					
+					<li><a href="${best }">Best20</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-							<li><a href="product.jsp">랭킹20</a></li>
+							<li><a href="${best }">랭킹20</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
 					
 					<li><a href="${clothing }">CLOTHING</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-							<li><a href="index.jsp">티셔츠/나시</a></li>
-							<li><a href="index.jsp">맨투맨</a></li>
-							<li><a href="index.jsp">후디</a></li>
-							<li><a href="index.jsp">바지</a></li>
-							<li><a href="index.jsp">니트</a></li>
-							<li><a href="index.jsp">원피스/스커트</a></li>
-							<li><a href="index.jsp">셔츠/블라우스</a></li>
+							<li><a href="${tnasi }">티셔츠/나시</a></li>
+							<li><a href="${mantoman }">맨투맨</a></li>
+							<li><a href="${hoody }">후디</a></li>
+							<li><a href="${pants }">바지</a></li>
+							<li><a href="${neat }">니트</a></li>
+							<li><a href="${onepieceskirt }">원피스/스커트</a></li>
+							<li><a href="${shirtblouse }">셔츠/블라우스</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
 
 					<li><a href="${outer }">OUTER</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-							<li><a href="index.jsp">자켓</a></li>
-							<li><a href="index.jsp">코트/점퍼</a></li>
-							<li><a href="index.jsp">가디건</a></li>
+							<li><a href="${jacket }">자켓</a></li>
+							<li><a href="${coatjumper }">코트/점퍼</a></li>
+							<li><a href="${cardigan }">가디건</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
 
 					<li><a href="${shoes }">SHOES</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-							<li><a href="index.jsp">신발</a></li>
+							<li><a href="${shoes }">신발</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
 
 					<li><a href="${acc }">ACC</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 150%;">
-							<li><a href="index.jsp">벨트</a></li>
-							<li><a href="index.jsp">안경</a></li>
-							<li><a href="index.jsp">모자</a></li>
-							<li><a href="index.jsp">양말</a></li>
-							<li><a href="index.jsp">악세사리</a></li>
-							<li><a href="index.jsp">기타</a></li>
+							<li><a href="${belt }">벨트</a></li>
+							<li><a href="${glasses }">안경</a></li>
+							<li><a href="${hat }">모자</a></li>
+							<li><a href="${socks }">양말</a></li>
+							<li><a href="${accessories }">악세사리</a></li>
+							<li><a href="${etc }">기타</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
 
 					<li class="sale-noti"><a href="${event }">EVENT</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-							<li><a href="index.jsp">NEW 5%</a></li>
-							<li><a href="index.jsp">SALE</a></li>
+							<li><a href="${new5 }">NEW 5%</a></li>
+							<li><a href="${sale }">SALE</a></li>
 
 						</ul></li>
 					<span class="linedivide1"></span>
@@ -241,7 +296,7 @@ font-size: 9px !important;
 				<div class="header-cart-buttons">
 					<div class="header-cart-wrapbtn">
 						<!-- Button -->
-						<a href="cart.jsp"
+						<a href="${cartbutton }"
 							class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 							View Cart </a>
 					</div>
@@ -280,7 +335,7 @@ font-size: 9px !important;
 						class="topbar-social-item fa fa-instagram"></a> <a href="#"
 						class="chatBtn"><img
 						style="width: 15px; margin-left: 11px; margin-bottom: 4px;"
-						src="/ot/resources/images/icons/chat_icon.png"></a> <a href="cart.jsp"><img
+						src="/ot/resources/images/icons/chat_icon.png"></a> <a href="${cartbutton }"><img
 						style="width: 17px; margin-left: 15px; margin-bottom: 4px;"
 						src="/ot/resources/images/icons/cart.png"></a>
 
@@ -333,59 +388,59 @@ font-size: 9px !important;
 
 						<span class="linedivide1"></span>
 
-						<li><a href="product.jsp">Best20</a>
+						<li><a href="${best }">Best20</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-								<li><a href="product.jsp">랭킹20</a></li>
+								<li><a href="${best }">랭킹20</a></li>
 							</ul></li>
 						<span class="linedivide1"></span>
 
 						<li><a href="${clothing }">CLOTHING</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-								<li><a href="index.jsp">티셔츠/나시</a></li>
-								<li><a href="index.jsp">맨투맨</a></li>
-								<li><a href="index.jsp">후디</a></li>
-								<li><a href="index.jsp">바지</a></li>
-								<li><a href="index.jsp">니트</a></li>
-								<li><a href="index.jsp">원피스/스커트</a></li>
-								<li><a href="index.jsp">셔츠/블라우스</a></li>
+								<li><a href="${tnasi }">티셔츠/나시</a></li>
+							<li><a href="${mantoman }">맨투맨</a></li>
+							<li><a href="${hoody }">후디</a></li>
+							<li><a href="${pants }">바지</a></li>
+							<li><a href="${neat }">니트</a></li>
+							<li><a href="${onepieceskirt }">원피스/스커트</a></li>
+							<li><a href="${shirtblouse }">셔츠/블라우스</a></li>
 							</ul></li>
 						<span class="linedivide1"></span>
 
 						<li><a href="${outer }">OUTER</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-								<li><a href="index.jsp">자켓</a></li>
-								<li><a href="index.jsp">코트/점퍼</a></li>
-								<li><a href="index.jsp">가디건</a></li>
+								<li><a href="${jacket }">자켓</a></li>
+							<li><a href="${coatjumper }">코트/점퍼</a></li>
+							<li><a href="${cardigan }">가디건</a></li>
 							</ul></li>
 						<span class="linedivide1"></span>
 
 						<li><a href="${shoes }">SHOES</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-								<li><a href="index.jsp">신발</a></li>
+								<li><a href="${shoes }">신발</a></li>
 							</ul></li>
 						<span class="linedivide1"></span>
 
 						<li><a href="${acc }">ACC</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 150%;">
-								<li><a href="index.jsp">벨트</a></li>
-								<li><a href="index.jsp">안경</a></li>
-								<li><a href="index.jsp">모자</a></li>
-								<li><a href="index.jsp">양말</a></li>
-								<li><a href="index.jsp">악세사리</a></li>
-								<li><a href="index.jsp">기타</a></li>
+								<li><a href="${belt }">벨트</a></li>
+							<li><a href="${glasses }">안경</a></li>
+							<li><a href="${hat }">모자</a></li>
+							<li><a href="${socks }">양말</a></li>
+							<li><a href="${accessories }">악세사리</a></li>
+							<li><a href="${etc }">기타</a></li>
 							</ul></li>
 						<span class="linedivide1"></span>
 
 						<li class="sale-noti"><a href="${event }">EVENT</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
-								<li><a href="index.jsp">NEW 5%</a></li>
-								<li><a href="index.jsp">SALE</a></li>
+								<li><a href="${new5 }">NEW 5%</a></li>
+							<li><a href="${sale }">SALE</a></li>
 
 							</ul></li>
 
@@ -430,7 +485,7 @@ font-size: 9px !important;
 						class="topbar-social-item fa fa-instagram"></a> <a href="#"
 						class="chatBtn"><img
 						style="width: 15px; margin-left: 11px; margin-bottom: 4px;"
-						src="/ot/resources/images/icons/chat_icon.png"></a> <a href="cart.jsp"><img
+						src="/ot/resources/images/icons/chat_icon.png"></a> <a href="${cartbutton }"><img
 						style="width: 17px; margin-left: 15px; margin-bottom: 4px;"
 						src="/ot/resources/images/icons/cart.png"></a>
 
@@ -499,7 +554,7 @@ font-size: 9px !important;
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									Button
-									<a href="cart.jsp" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
+									<a href="${cartbutton }" class="flex-c-m size1 bg1 bo-rad-20 hov1 s-text1 trans-0-4">
 										View Cart
 									</a>
 								</div>
@@ -550,22 +605,22 @@ font-size: 9px !important;
 					<li class="item-menu-mobile" style="background: black;"><a
 						href="${clothing }">CLOTHING</a>
 						<ul class="sub-menu">
-							<li><a href="index.jsp">티셔츠/나시</a></li>
-							<li><a href="index.jsp">맨투맨</a></li>
-							<li><a href="index.jsp">후디</a></li>
-							<li><a href="index.jsp">바지</a></li>
-							<li><a href="index.jsp">니트</a></li>
-							<li><a href="index.jsp">원피스/스커트</a></li>
-							<li><a href="index.jsp">셔츠/블라우스</a></li>
+							<li><a href="${tnasi }">티셔츠/나시</a></li>
+							<li><a href="${mantoman }">맨투맨</a></li>
+							<li><a href="${hoody }">후디</a></li>
+							<li><a href="${pants }">바지</a></li>
+							<li><a href="${neat }">니트</a></li>
+							<li><a href="${onepieceskirt }">원피스/스커트</a></li>
+							<li><a href="${shirtblouse }">셔츠/블라우스</a></li>
 						</ul> <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
 					<li class="item-menu-mobile" style="background: black;"><a
 						href="${outer }">OUTER</a>
 						<ul class="sub-menu">
-							<li><a href="index.jsp">자켓</a></li>
-							<li><a href="index.jsp">코트/점퍼</a></li>
-							<li><a href="index.jsp">가디건</a></li>
+							<li><a href="${jacket }">자켓</a></li>
+							<li><a href="${coatjumper }">코트/점퍼</a></li>
+							<li><a href="${cardigan }">가디건</a></li>
 						</ul> <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
@@ -573,7 +628,7 @@ font-size: 9px !important;
 					<li class="item-menu-mobile" style="background: black;"><a
 						href="${shoes }">SHOES</a>
 						<ul class="sub-menu">
-							<li><a href="index.jsp">신발</a></li>
+							<li><a href="${shoes }">신발</a></li>
 						</ul> <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
@@ -581,20 +636,20 @@ font-size: 9px !important;
 					<li class="item-menu-mobile" style="background: black;"><a
 						href="${acc }">ACC</a>
 						<ul class="sub-menu">
-							<li><a href="index.jsp">벨트</a></li>
-							<li><a href="index.jsp">안경/선글라스</a></li>
-							<li><a href="index.jsp">모자</a></li>
-							<li><a href="index.jsp">양말</a></li>
-							<li><a href="index.jsp">악세사리</a></li>
-							<li><a href="index.jsp">기타</a></li>
+							<li><a href="${belt }">벨트</a></li>
+							<li><a href="${glasses }">안경</a></li>
+							<li><a href="${hat }">모자</a></li>
+							<li><a href="${socks }">양말</a></li>
+							<li><a href="${accessories }">악세사리</a></li>
+							<li><a href="${etc }">기타</a></li>
 						</ul> <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
 					<li class="item-menu-mobile" style="background: black;"><a
 						class="item-menu-mobile" href="${event }">EVENT</a>
 						<ul class="sub-menu">
-							<li><a href="index.jsp">NEW 5%</a></li>
-							<li><a href="index.jsp">SALE</a></li>
+							<li><a href="${new5 }">NEW 5%</a></li>
+							<li><a href="${sale }">SALE</a></li>
 						</ul> <i class="arrow-main-menu fa fa-angle-right" aria-hidden="true"></i>
 					</li>
 
@@ -611,14 +666,14 @@ font-size: 9px !important;
 				<div>
 					<h4 class="helve">EVENT</h4>
 					<ul>
-						<li><a href="/product/list.html?cate_no=96">NEW5%</a></li>
-						<li><a href="/product/list.html?cate_no=96">SALE</a></li>
+						<li><a href="${new5 }">NEW5%</a></li>
+						<li><a href="${sale }">SALE</a></li>
 					</ul>
 				</div>
 				<div>
 					<h4 class="helve">BEST20</h4>
 					<ul>
-						<li><a href="/category/party-look/236/">랭킹20</a></li>
+						<li><a href="${best }">랭킹20</a></li>
 					</ul>
 				</div>
 				<div>
@@ -626,13 +681,13 @@ font-size: 9px !important;
 						<a href="${clothing }">CLOTHING</a>
 					</h4>
 					<ul>
-						<li><a href="index.jsp">티셔츠/나시</a></li>
-							<li><a href="index.jsp">맨투맨</a></li>
-							<li><a href="index.jsp">후디</a></li>
-							<li><a href="index.jsp">바지</a></li>
-							<li><a href="index.jsp">니트</a></li>
-							<li><a href="index.jsp">원피스/스커트</a></li>
-							<li><a href="index.jsp">셔츠/블라우스</a></li>
+						<li><a href="${tnasi }">티셔츠/나시</a></li>
+							<li><a href="${mantoman }">맨투맨</a></li>
+							<li><a href="${hoody }">후디</a></li>
+							<li><a href="${pants }">바지</a></li>
+							<li><a href="${neat }">니트</a></li>
+							<li><a href="${onepieceskirt }">원피스/스커트</a></li>
+							<li><a href="${shirtblouse }">셔츠/블라우스</a></li>
 					</ul>
 				</div>
 				<div>
@@ -640,9 +695,9 @@ font-size: 9px !important;
 						<a href="${outer }">OUTER</a>
 					</h4>
 					<ul>
-						<li><a href="index.jsp">자켓</a></li>
-							<li><a href="index.jsp">코트/점퍼</a></li>
-							<li><a href="index.jsp">가디건</a></li>
+						<li><a href="${jacket }">자켓</a></li>
+							<li><a href="${coatjumper }">코트/점퍼</a></li>
+							<li><a href="${cardigan }">가디건</a></li>
 					</ul>
 				</div>
 				<div>
@@ -659,12 +714,12 @@ font-size: 9px !important;
 						<a href="${acc }">ACC</a>
 					</h4>
 					<ul>
-						<li><a href="index.jsp">벨트</a></li>
-							<li><a href="index.jsp">안경/선글라스</a></li>
-							<li><a href="index.jsp">모자</a></li>
-							<li><a href="index.jsp">양말</a></li>
-							<li><a href="index.jsp">악세사리</a></li>
-							<li><a href="index.jsp">기타</a></li>
+						<li><a href="${belt }">벨트</a></li>
+							<li><a href="${glasses }">안경</a></li>
+							<li><a href="${hat }">모자</a></li>
+							<li><a href="${socks }">양말</a></li>
+							<li><a href="${accessories }">악세사리</a></li>
+							<li><a href="${etc }">기타</a></li>
 					</ul>
 				</div>
 				
@@ -705,7 +760,7 @@ font-size: 9px !important;
 					</div>
 					<div>
 						<h4 class="helve">
-							<a href="review.jsp">REVIEW</a>
+							<a href="${review }">REVIEW</a>
 						</h4>
 					</div>
 				</div>
@@ -718,7 +773,7 @@ font-size: 9px !important;
 						<ul>
 							<li><a href="/myshop/order/list.html">주문내역</a></li>
 							<li></li>
-							<li><a href="cart.jsp"
+							<li><a href="${cartbutton }"
 								class="xans-element- xans-layout xans-layout-statelogoff ">장바구니
 									<span class="">(<span class="EC-Layout-Basket-count"></span>)
 								</span>

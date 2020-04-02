@@ -8,14 +8,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>oT.</title>
-<link rel="icon" type="image/png" href="<c:url value="/resources/images/icons/favicon.png" />">
+	<link rel="icon" type="image/png" href="<c:url value="/resources/images/icons/favicon.png"/>">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="/ot/resources/css/Login_bootstrap.min.css">
     <!-- style CSS -->
     <link rel="stylesheet" href="/ot/resources/css/Login_style.css">
+     <link rel="stylesheet" href="/ot/resources/css/popup.css">
 </head>
 
 <body class="bg-white">
+
 	<jsp:include page="header.jsp"/>
     <!--================login_part Area =================-->
     <section class="login_part section_padding">
@@ -41,15 +43,17 @@
                                         <input type="checkbox" id="f-option" name="selector">
                                         <label for="f-option">Remember me</label>
                                     </div>
-                                    <button id="loginBtn" value="submit" class="btn_3">
+                                      <a href="#layer2"  id="loginBtn"  class="btn_3">
                                         log in
-                                    </button> 
-                                    <button style="margin: 0px; background: white;
-                                    color: black;" type="submit" value="submit" class="btn_3">
+                                    </a> 
+                                    <a style="margin: 0px; background: white;
+                                    color: black;" type="submit"  class="btn_3">
                                         join us
-                                    </button>
-                                    <a style="margin-top: 10px;margin-right: 14%;" class="lost_pass" href="findId.jsp">forget ID?</a>
-                                    <a style="margin-top: 10px;margin-right: 15%;border-right: 2px solid black;padding-right: 13%;" class="lost_pass" href="findpassword.jsp">forget Password?</a>
+                                    </a>
+                                    <div style="display: felx">
+                                    <a style="margin-top: 10px;margin-right: 4%;" class="lost_pass" href="findId.jsp">forget ID?</a>
+                                    <a style="margin-top: 10px;margin-right: 15%;padding-right: 13%;" class="lost_pass" href="findpassword.jsp">forget Password?</a>
+                                    </div>
                                 </div>
                         </div>
                     </div>
@@ -59,20 +63,81 @@
     </section>
     <!--================login_part end =================-->
 
-   
+ <div class="dim-layer">
+   <div class="dimBg"></div>
+    <div id="layer2" class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts" style="text-align: center">
+                <!--content //-->
+                <p class="ctxt mb20" id="check_ment"><br></p>
+
+                <div class="btn-r">
+                    <a href="#" class="btn-layerClose">Close</a>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+</div> 
 <jsp:include page="footer.jsp"/>
 </body>
 	<script>
-		$('#loginBtn').click(function(){
-			
-			$.ajax({
-				url : 
-				
-				
-			})
-			
-		})
 	
+		$('#loginBtn').click(function(){
+			   $href = $(this).attr('href');
+				
+				 
+			  $.ajax({
+				url : "login.do",
+				data : {id : $('#name').val(),  pwd : $('#password').val() },
+				success : function(data){
+					if(data == "ok"){
+					     location.href="home.do"
+					}else{
+						 layer_popup($href);
+					  $('#check_ment').html('아이디/비밀번호를 확인 하세요.'); 	
+					}
+				},error : function(){
+					alert('에러다');
+				}
+			});
+			
+		});
+	
+		   function layer_popup(el){
+	    	      
+	    	      var $el = $(el);        //레이어의 id를 $el 변수에 저장
+	    	      var isDim = $el.prev().hasClass('dimBg');   //dimmed 레이어를 감지하기 위한 boolean 변수
+
+	    	      isDim ? $('.dim-layer').fadeIn() : $el.fadeIn();
+
+	    	      var $elWidth = ~~($el.outerWidth()),
+	    	          $elHeight = ~~($el.outerHeight()),
+	    	          docWidth = $(document).width(),
+	    	          docHeight = $(document).height();
+
+	    	      // 화면의 중앙에 레이어를 띄운다.
+	    	      if ($elHeight < docHeight || $elWidth < docWidth) {
+	    	          $el.css({
+	    	              marginTop: -$elHeight /2,
+	    	              marginLeft: -$elWidth/2
+	    	          })
+	    	      } else {
+	    	          $el.css({top: 0, left: 0});
+	    	      }
+
+	    	      $el.find('a.btn-layerClose').click(function(){
+	    	          isDim ? $('.dim-layer').fadeOut() : $el.fadeOut(); // 닫기 버튼을 클릭하면 레이어가 닫힌다.
+	    	          return false;
+	    	      });
+
+	    	      $('.layer .dimBg').click(function(){
+	    	          $('.dim-layer').fadeOut();
+	    	          return false;
+	    	      });
+
+	    	  }
+		
 	
 	</script>
 

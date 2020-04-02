@@ -10,6 +10,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
 <link rel="icon" type="image/png" href="<c:url value="/resources/images/icons/favicon.png" />">
+
 <!--===============================================================================================-->
 <link rel="stylesheet" type="text/css"
 	href="<c:url value="/resources/vendor/bootstrap/css/bootstrap.min.css"/>">
@@ -61,7 +62,7 @@ font-size: 9px !important;
 }
 </style>
 <body class="animsition">
-
+      
 	<!-- header fixed -->
 	<div class="wrap_header fixed-header2 trans-0-4"
 		style="max-height: 50px;">

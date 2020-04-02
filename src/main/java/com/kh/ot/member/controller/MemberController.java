@@ -103,12 +103,23 @@ public class MemberController {
 	 * @return
 	 */
 	@RequestMapping("logout.do")
-		public String logout(SessionStatus status) {
+	public String logout(SessionStatus status) {
 
-		  status.setComplete();
-		  
-			return "home";
-		}
+	  status.setComplete();
+	  
+		return "home";
+	}
 	 
+	/**
+	 * @작성일 : 2020. 4. 2.
+	 * @작성자 :이대윤
+	 * @내용 : 프로덕트 페이지 이동
+	 * @param @return
+	 * @return String
+	 */
+	@RequestMapping("clothing.do")
+	public String clothing() {
+		return "product";
+	}
 
 }

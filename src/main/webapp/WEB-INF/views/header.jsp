@@ -67,13 +67,14 @@ font-size: 9px !important;
 	<div class="wrap_header fixed-header2 trans-0-4"
 		style="max-height: 50px;">
 		<!-- Logo -->
+		<c:url var="chatIcon" value="/resources/images/icons/chat_icon.png"/>
 		<a href="index.jsp" class="logo"> <img src="<c:url value="/resources/images/icons/ot.png"/>"
 			alt="IMG-LOGO" style="max-height: 28px;">
 		</a> <a href="https://www.instagram.com/blackup_kr/" target="blank_"
 			class="topbar-social-item fa fa-instagram"></a> <a href="#"
 			class="chatBtn"><img
 			style="width: 15px; margin-left: 11px; margin-bottom: 4px;"
-			src="<c:url value="/resources/images/icons/chat_icon.png"/>"></a> <a href="cart.jsp"><img
+			src="${ chatIcon }"></a> <a href="cart.jsp"><img
 			style="width: 17px; margin-left: 15px; margin-bottom: 4px;"
 			src="<c:url value="/resources/images/icons/cart.png"/>"></a>
 
@@ -90,7 +91,6 @@ font-size: 9px !important;
 							<li><a href="product.jsp">랭킹20</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
-
 					<li><a href="clothing.do">CLOTHING</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">

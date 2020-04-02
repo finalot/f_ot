@@ -308,14 +308,14 @@
 		<button style="width:88%;height:12%;background:snow;margin-top:10%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
 		<a class="header-wrapicon1 dis-block"href="/ot/mypage.jsp" >
 				<img style="border-radius:10%;" src="<c:url value="/resources/images/icons/icon-header-01.png"/>" class="header-icon1" alt="ICON"
-				onmouseover="this.src='images/icons/icon-header-01-1.png'"
-				onmouseout="this.src='images/icons/icon-header-01.png'">
+				onmouseover="this.src='/ot/resoursec/images/icons/icon-header-01-1.png'"
+				onmouseout="this.src='/ot/resoursec/images/icons/icon-header-01.png'">
 			</a></button>
 		
 		<button class="chatBtn" style="width:88%;height:12%;margin-top:230%;margin-left:-88%;border-radius:10%;">
 			<img  style="border-radius:10%;" src="images/icons/icon-header-05.png" class="header-icon1" alt="ICON"
-				onmouseover="this.src='images/icons/icon-header-05-5.png'"
-				onmouseout="this.src='images/icons/icon-header-05.png'">
+				onmouseover="this.src='/ot/resoursec/images/icons/icon-header-05-5.png'"
+				onmouseout="this.src='/ot/resoursec/images/icons/icon-header-05.png'">
 		</button>
 		<button style="width:88%;height:12%;background:snow;margin-top:450%;margin-left:-88%;border-radius:10%;"href="/web/index.jsp">
 		<a class="symbol-btn-back-to-top" href="index.jsp" >

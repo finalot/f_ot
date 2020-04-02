@@ -31,4 +31,19 @@ public class MemberController {
 		
 		return "join";
 	}
+	
+	/**
+	 * @작성일 : 2020-04-02
+	 * @작성자 : 문태환
+	 * @내용   : 마이페이지 이동
+	 * @return
+	 */
+	@RequestMapping("MyPage.do")
+	public String MyPage() {
+		
+		
+		
+		return "mypage";
+	}
+	
 }

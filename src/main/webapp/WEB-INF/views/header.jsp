@@ -253,9 +253,9 @@ font-size: 9px !important;
 						class="topbar-social-item fa fa-instagram"></a> <a href="#"
 						class="chatBtn"><img
 						style="width: 15px; margin-left: 11px; margin-bottom: 4px;"
-						src="./images/icons/chat_icon.png"></a> <a href="cart.jsp"><img
+						src="/ot/resources/images/icons/chat_icon.png"></a> <a href="cart.jsp"><img
 						style="width: 17px; margin-left: 15px; margin-bottom: 4px;"
-						src="<c:url value="/resources/images/icons/cart.png"/>"></a>
+						src="/ot/resources/images/icons/cart.png"></a>
 
 				</div>
 
@@ -271,12 +271,13 @@ font-size: 9px !important;
 			
 					<c:url var="loginView" value="loginView.do"/>				
 					<c:url var="joinView" value="joinView.do"/>				
+					<c:url var="MyPage" value="MyPage.do"/>				
 																		
 					&nbsp;&nbsp; <a href='${loginView}'  class="topbar-email"> Login </a>
 					&nbsp;&nbsp; <span class="topbar-email"> . </span> &nbsp;&nbsp; <a
 						href="${joinView}" class="topbar-email"> Join </a> &nbsp;&nbsp; <span
 						class="topbar-email"> . </span> &nbsp;&nbsp; <a
-						href="/ot/mypage.jsp" class="topbar-email"> MyPage </a>
+						href="${MyPage}" class="topbar-email"> MyPage </a>
 					&nbsp;&nbsp; <span class="topbar-email"> . </span> &nbsp;&nbsp; <a
 						href="notice.jsp" class="topbar-email"> Notice </a> &nbsp;&nbsp; <span
 						class="topbar-email"> . </span> &nbsp; <a href="#" id="allmenubar1"
@@ -384,7 +385,7 @@ font-size: 9px !important;
 			style="margin-bottom: 20px; max-height: 30px;">
 			<!-- Logo moblie -->
 			<a href="index.jsp" class="logo-mobile" style="margin-bottom: 10px;">
-				<img src="images/icons/ot.png" alt="IMG-LOGO"
+				<img src="/ot/resources/images/icons/ot.png" alt="IMG-LOGO"
 				style="max-height: 25px;">
 			</a>
 
@@ -396,9 +397,9 @@ font-size: 9px !important;
 						class="topbar-social-item fa fa-instagram"></a> <a href="#"
 						class="chatBtn"><img
 						style="width: 15px; margin-left: 11px; margin-bottom: 4px;"
-						src="./images/icons/chat_icon.png"></a> <a href="cart.jsp"><img
+						src="/ot/resources/images/icons/chat_icon.png"></a> <a href="cart.jsp"><img
 						style="width: 17px; margin-left: 15px; margin-bottom: 4px;"
-						src="./images/icons/cart.png"></a>
+						src="/ot/resources/images/icons/cart.png"></a>
 
 					<!-- 	<span class="linedivide2"></span> -->
 					<!-- 

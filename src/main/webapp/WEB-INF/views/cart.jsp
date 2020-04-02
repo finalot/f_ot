@@ -11,30 +11,30 @@
 <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icons/favicon.png"/>
+	<link rel="icon" type="image/png" href="/ot/resources/images/icons/favicon.png"/>
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/bootstrap/css/bootstrap.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/themify/themify-icons.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/themify/themify-icons.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/elegant-font/html-css/style.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/fonts/elegant-font/html-css/style.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/animate/animate.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/css-hamburgers/hamburgers.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/animsition/css/animsition.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/vendor/slick/slick.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/ot/resources/css/main.css">
 <!--===============================================================================================-->
 <script type="text/javascript" src="https://cdn.iamport.kr/js/iamport.payment-1.1.5.js"></script>
 <style>
@@ -51,7 +51,7 @@ margin-right: 3%;
 
 
 	<!-- Header -->
-	<%@include file="header.jsp" %>
+	<jsp:include page="header.jsp"/>
 
 
 	<!-- Title Page -->
@@ -108,7 +108,7 @@ margin-right: 3%;
 							
 								</div>
 							</td>
-							<td class="column-6"><img src="/ot/images/icons/icon-point.png" width="15px;height:15px;" 
+							<td class="column-6"><img src="/ot/resources/images/icons/icon-point.png" width="15px;height:15px;" 
 							style="position: relative;left: -5px;
 								top: -1px;">900원</td>
 							<td class="column-7" style="padding-left: 40px;">기본배송</td>
@@ -139,7 +139,7 @@ margin-right: 3%;
 									</button> -->
 								</div>
 						</td>
-							<td class="column-6"><img src="/ot/images/icons/icon-point.png" width="15px;height:15px;" 
+							<td class="column-6"><img src="/ot/resources/images/icons/icon-point.png" width="15px;height:15px;" 
 							style="position: relative;left: -5px;
 								top: -1px;">900원</td>
 							<td class="column-7" style="padding-left: 40px;">기본배송</td>
@@ -304,7 +304,7 @@ margin-right: 3%;
 			<h3 class=" " style="position: relative;font-size: 12px;
    font-weight: 600; top:89px;left:-48px;">결제 수단</h3><br>
     <p class = "required3" style="color:#000;">
-      <img src = "/ot/images/red.png" alt="필수">
+      <img src = "/ot/resources/images/red.png" alt="필수">
       필수입력사항
    </p>
 			<div style="display:flex;margin-top: 5%;">
@@ -451,7 +451,7 @@ margin-right: 3%;
     font-size: 12px;
     font-weight: 600; top:63px;left:-48px;">주문 정보</h3><br>
     <p class = "required2" style="color:#000;">
-      <img src = "/ot/images/red.png" alt="필수">
+      <img src = "/ot/resources/images/red.png" alt="필수">
       필수입력사항
    </p>
 		<form method="POST" name="inputForm" style="width: 100%;margin-right: 3%; margin-left: -4%;margin-top: 5%;height: 300px;">
@@ -459,7 +459,7 @@ margin-right: 3%;
         <tbody>
             <tr>
                 <th style="border-top:1px solid #ddd;">
-                   	 주문하시는 분<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                   	 주문하시는 분<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                   <td style="border-top:1px solid #ddd;">
                 	<input type="text" name="userName" id="userName" size="20px"> 
@@ -468,7 +468,7 @@ margin-right: 3%;
            
             <tr>
                 <th>
-                      주소<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                      주소<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
                    <input id="zipCode" style=" width:50px;" name="postcode1"  class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text" style="width:50px;">
@@ -485,7 +485,7 @@ margin-right: 3%;
             
             <tr>
                 <th style="border-bottom:1px solid #ddd;">
-                    휴대전화<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                    휴대전화<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td style="border-bottom:1px solid #ddd;">
                     <select id="mobile1" name="mobile[]" style="font-size:12px;">
@@ -503,7 +503,7 @@ margin-right: 3%;
             
             <tr>
                 <th>
-                    이메일<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                    이메일<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
                     <input id="email" name="email" value="" type="text">
@@ -519,7 +519,7 @@ margin-right: 3%;
     font-size: 12px;
    font-weight: 600; top:63px;left:-48px;">배송 정보</h3><br>
     <p class = "required4" style="color:#000;">
-      <img src = "/ot/images/red.png" alt="필수">
+      <img src = "/ot/resources/images/red.png" alt="필수">
       필수입력사항
    </p>
 	<div style="display:flex;margin-top: 3%;">
@@ -529,7 +529,7 @@ margin-right: 3%;
         <tbody>
            <tr>
                 <th style="border-top:1px solid #ddd;">
-                   	 주문하시는 분<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                   	 주문하시는 분<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td style="border-top:1px solid #ddd;">
                 	<input id="delivery" name="delivery" type="radio">
@@ -542,7 +542,7 @@ margin-right: 3%;
                 
                  <tr>
                 <th>
-                      받으시는 분<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                      받으시는 분<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                    </th>
                 <td>
                     <input type="text" name="userName" id="userName" size="20px"> 
@@ -553,7 +553,7 @@ margin-right: 3%;
             
             <tr>
                 <th>
-                      주소<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                      주소<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
                    <input id="zipCode" style=" width:50px;" name="postcode1" class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text" style="width:50px;">
@@ -570,7 +570,7 @@ margin-right: 3%;
             
             <tr>
                 <th style="border-bottom:1px solid #ddd;">
-                    휴대전화<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                    휴대전화<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td style="border-bottom:1px solid #ddd;">
                     <select id="mobile1" name="mobile[]"  style="font-size:12px;">

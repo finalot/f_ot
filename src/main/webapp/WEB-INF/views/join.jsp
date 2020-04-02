@@ -7,13 +7,13 @@
 <title>회원가입폼</title>
 <!--  <link href="/ot/css/join.css" rel="stylesheet">
  -->
- <link href="/ot/css/join2.css" rel="stylesheet">
+ <link href="/ot/resources/css/join2.css" rel="stylesheet">
 <script src="http://dmaps.daum.net/map_js_init/postcode.v2.js"></script>
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
- <link rel="stylesheet" href="./css/popup.css">
+ <link rel="stylesheet" href="/ot/resources/css/popup.css">
  </head>
 <body >
-        <%@include file="header.jsp" %>
+        <jsp:include page="header.jsp"/>
 <div style="margin-left:20%;">
 <br><br><br><br>
         
@@ -21,7 +21,7 @@
     font-size: 12px;
     font-weight: 600; top:7px;">기본정보</h3><br>
    <p class = "required" style="color:#000;">
-      <img src = "/ot/images/red.png" alt="필수">
+      <img src = "/ot/resources/images/red.png" alt="필수">
       필수입력사항
    </p>
    
@@ -31,7 +31,7 @@
         <tbody>
             <tr>
                 <th style="border-top:1px solid #ddd;">
-                                        아이디<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                                        아이디<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
      
                 </th>
                
@@ -61,7 +61,7 @@
             </tr>
             <tr>
                 <th>
-                       비밀번호<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                       비밀번호<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                    </th>
                 <td>
                     <input type="text" name="userPwd" id="userpwd" size="20px"> 
@@ -70,7 +70,7 @@
             </tr>
             <tr>
                 <th>
-                                        비밀번호 확인<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                                        비밀번호 확인<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
                     <input type="text" name="userPwd1" id="pwdCheck" size="20px">
@@ -79,7 +79,7 @@
             
               <tr>
                 <th>
-                    이름<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                    이름<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
                     <input type="text" name="userName" id="userName" size="20px"> 
@@ -88,7 +88,7 @@
             
             <tr>
                 <th>
-                      주소<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                      주소<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
                    <input id="zipCode" style=" width:50px;" name="postcode1"  class="inputTypeText" placeholder="" readonly="readonly" maxlength="14" value="" type="text" style="width:50px;">
@@ -104,7 +104,7 @@
             </tr>
             <tr>
                 <th style="border-bottom:1px solid #ddd;">
-                    휴대전화<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                    휴대전화<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td style="border-bottom:1px solid #ddd;">
                     <select id="mobile1" name="mobile[]" style="font-size:12px;">
@@ -122,7 +122,7 @@
             
             <tr>
                 <th>
-                    이메일<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                    이메일<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                 </th>
                 <td>
                     <input id="email" name="email" value="" type="text">
@@ -154,7 +154,7 @@
             
             <tr>
                    <th style="border-top: 1px solid #ddd;">
-                         생년월일<img src="/ot/images/red.png" style="position:relative;left:8px;">
+                         생년월일<img src="/ot/resources/images/red.png" style="position:relative;left:8px;">
                     </th>
                     <td style="border-top: 1px solid #ddd;">
                    <input id="birth_year"  name="birth_year" class="inputTypeText" placeholder="" maxlength="4" value="" type="text"
@@ -483,7 +483,7 @@
         <br><br><br><br>
         
     </div>
-        <%@include file="footer.jsp" %>
+     <jsp:include page="footer.jsp"/>
     
     <script>
     

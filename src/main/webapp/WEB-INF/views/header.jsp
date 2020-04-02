@@ -268,11 +268,13 @@ font-size: 9px !important;
 				<div class="topbar-child2">
 					<span class="topbar-email"> . </span>
 
-
-					<!--  -->
-					&nbsp;&nbsp; <a href="login.jsp" class="topbar-email"> Login </a>
+			
+					<c:url var="loginView" value="loginView.do"/>				
+					<c:url var="joinView" value="joinView.do"/>				
+																		
+					&nbsp;&nbsp; <a href='${loginView}'  class="topbar-email"> Login </a>
 					&nbsp;&nbsp; <span class="topbar-email"> . </span> &nbsp;&nbsp; <a
-						href="/ot/join.jsp" class="topbar-email"> Join </a> &nbsp;&nbsp; <span
+						href="${joinView}" class="topbar-email"> Join </a> &nbsp;&nbsp; <span
 						class="topbar-email"> . </span> &nbsp;&nbsp; <a
 						href="/ot/mypage.jsp" class="topbar-email"> MyPage </a>
 					&nbsp;&nbsp; <span class="topbar-email"> . </span> &nbsp;&nbsp; <a

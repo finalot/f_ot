@@ -1,5 +1,7 @@
 package com.kh.ot.member.service;
 
+import com.kh.ot.member.vo.Member;
+
 public interface MemberService {
 
 	
@@ -9,6 +11,6 @@ public interface MemberService {
 	 * @내용    : 로그인 인터페이스
 	 * @return
 	 */
-	public String login();
+	public Member loginMember(String id, String pwd);
 	
 }

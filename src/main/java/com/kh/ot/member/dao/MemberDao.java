@@ -13,7 +13,10 @@ public class MemberDao {
 	@Autowired
 	private SqlSessionTemplate sqlSession;
 	
-	public Member loginMember(Member m) {
+	public Member loginMember(String id,String pwd) {
+		Member m = new Member();
+		m.setMemId(id);
+		m.setMemPwd(pwd);
 		return (Member)sqlSession.selectOne("memberMapper.loginMember",m);
 	}
 	

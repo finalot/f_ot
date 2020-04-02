@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE HTML>
 <html lang="ko">
 <head>
@@ -7,15 +8,16 @@
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 <meta http-equiv="Content-Style-Type" content="text/css">
 <title>oT.</title>
+
 <script src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
-   <link rel="stylesheet" href="./css/Login_style.css">
-   <link rel="stylesheet" href="./css/mypage_basic.css">
-   <link rel="stylesheet" href="./css/mypage.css">
+   <link rel="stylesheet" type="text/css" href="/ot/resources/css/Login_style.css"/>
+   <link rel="stylesheet" type="text/css" href="/ot/resources/css/mypage_basic.css"/>
+   <link rel="stylesheet" type="text/css" href="/ot/resources/css/mypage.css"/>
    
    <link rel="icon" type="image/png" href="images/icons/favicon.png"/>
 </head>
 <body>
-	<%@include file="header.jsp" %>
+	<jsp:include page="header.jsp"/>
 	
  	<div id="memberInf">
     	<p class="xans-element- xans-myshop xans-myshop-asyncbenefit mypage_top ">
@@ -173,6 +175,6 @@
 	<hr class="layout">
 	</div>
 
- <%@include file="footer.jsp" %>
+ <jsp:include page="footer.jsp"/>
 </body>
 </html>

@@ -38,7 +38,7 @@
 <body class="animsition">
 
 	<!-- Header -->
-	<jsp:include page="header.jsp" >
+	<jsp:include page="header.jsp"/>
 
 	<!-- Title Page -->
 	<section class="bg-title-page p-t-50 p-b-40 flex-col-c-m" style="background-image: url(/ot/resources/images/heading-pages-02.jpg);">
@@ -524,7 +524,7 @@
 
 
 	<!-- Footer -->
-	<jsp:include page="footer.jsp">
+	<jsp:include page="footer.jsp"/>
 
 
 

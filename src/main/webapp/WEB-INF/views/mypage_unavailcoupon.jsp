@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>  
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,21 +23,57 @@
 </head>
 <body>
 	<%@include file="header.jsp" %>	
- 	<div id="memberInf">
-    	<p class="xans-element- xans-myshop xans-myshop-asyncbenefit mypage_top ">
-    		<strong>
-    		<span><span class="xans-member- var-name">홍길동</span></span>
-    		</strong>
- 			님은 현재 
-			<strong>
-			<span class="xans-member- var-group_name" style="color:rgba(230,106,87,1);">MEMBER</span>
-			<span class="myshop_benefit_ship_free_message"></span>
-			</strong>
-  			입니다.
-		</p>
-	</div>
-	
-    <div id="container">
+ 	<div id="container">
+ 		<div id="memberInf1">
+			<div class="xans-myshop-bankbook " style="width: 80%;">
+    			<p class="xans-element- xans-myshop xans-myshop-asyncbenefit mypage_top ">
+    				<strong>
+    					<span><span class="xans-member- var-name">홍길동</span></span>
+    				</strong>
+ 					님은 현재 
+					<strong>
+						<span class="xans-member- var-group_name" style="color:rgba(230,106,87,1);">MEMBER</span>
+						<span class="myshop_benefit_ship_free_message"></span>
+					</strong>
+  					입니다.
+				</p>
+		
+			<ul style="float: right;width: 350px;height: 60px;margin-right: 100px;margin-top: -34px;">
+				<li class="xans-layout-shoppinginfo ">
+					<strong class="title">
+						<a href="/myshop/wish_list.html">WISH</a>
+					</strong>
+  			<br>
+					<strong class="data ">
+						<a href="/myshop/wish_list.html">
+							<span id="xans_myshop_interest_prd_cnt">0개</span>
+						</a>
+					</strong>
+				</li>
+				
+                <li>
+                    <strong class="title">
+                    	<a href="/myshop/mileage/historyList.html">POINT</a>
+                    </strong>
+                    <br>
+                    <strong class="data">
+                    	<a href="/myshop/mileage/historyList.html">0원</a>
+                    </strong>
+                </li>
+                
+                <li class="etc ">
+                    <strong class="title">
+                    	<a href="/myshop/coupon/coupon.html">COUPON</a>
+                    </strong>
+                    <br>
+                    <strong class="data">
+                    	<a href="/myshop/coupon/coupon.html">0<span>개</span></a>
+                    </strong>
+                    	<a href="/myshop/coupon/coupon.html"></a>
+	                </li>
+	            </ul>
+			</div>
+		</div>
         <div id="contents">
 			<div class="mypage_top_outer">
 			 <!-- <div module="myshop_bankbook">        

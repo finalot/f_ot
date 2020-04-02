@@ -29,8 +29,8 @@ public class MemberController {
 
 	@Autowired
 	private MemberService mService;
-	
-//	암호화용 	
+
+//	암호화용
 	@Autowired
 	private BCryptPasswordEncoder bcryptPasswordEncoder;
 
@@ -72,10 +72,10 @@ public class MemberController {
 
 	@RequestMapping("findIdView.do")
 	public String findIdView() {
-		
-		return "findId"; 
+
+		return "findId";
 	}
-	
+
 	/**
 	 * @작성일 : 2020-04-02
 	 * @작성자 : 문태환
@@ -85,23 +85,23 @@ public class MemberController {
 	 * @param response
 	 * @throws IOException
 	 */
-	
-	  @RequestMapping("login.do") 
+
+	  @RequestMapping("login.do")
 	  public void login(String id, String pwd, HttpServletResponse response,HttpSession session) throws IOException{
-	  
+
 	  String msg = "";
 	  PrintWriter out = response.getWriter();
 		  Member m = mService.loginMember(id, pwd);
-		  
+
 		if (m != null /* && bcryptPasswordEncoder.matches(m.getMemPwd(), pwd) */ ) {
 			  msg = "ok";
-			  session.setAttribute("loginMember", m);			  
+			  session.setAttribute("loginMember", m);
 		  }else {
-			  msg="fail";	
+			  msg="fail";
 		  }
 		  out.print(msg);
 	  }
-	  
+
 	  /**
 	 * @작성일  : 2020-04-02
 	 * @작성자  : 문태환
@@ -110,15 +110,16 @@ public class MemberController {
 	 * @return
 	 */
 	@RequestMapping("logout.do")
-		public String logout(SessionStatus status) {
+	public String logout(SessionStatus status) {
 
+<<<<<<< HEAD
 		  status.setComplete();
-		  
+
 			return "home";
 		}
-	
-	
-	
+
+
+
 	/**
 	 * @작성일  : 2020. 4. 2.
 	 * @작성자  : 문태환
@@ -130,12 +131,12 @@ public class MemberController {
 	 */
 	@RequestMapping("findId.do")
 	public void findId(HttpServletResponse response, String memName,String memSsn) throws IOException {
-		
+
 		response.setContentType("application/json; charset=utf-8");
 		JSONObject job = new JSONObject();
 	     PrintWriter out = response.getWriter();
 	     Member m = mService.findId(memName, memSsn);
-		
+
 	     if(m != null) {
 	    	 job.put("memName",m.getMemName());
 	    	 job.put("memId",m.getMemId());
@@ -144,10 +145,27 @@ public class MemberController {
 	     }else {
 	    	 out.print(job);
 	     }
-		 
-		
-		 
-		 
+
+
+
+
+=======
+	  status.setComplete();
+
+		return "home";
+	}
+
+	/**
+	 * @작성일 : 2020. 4. 2.
+	 * @작성자 :이대윤
+	 * @내용 : 프로덕트 페이지 이동
+	 * @param @return
+	 * @return String
+	 */
+	@RequestMapping("clothing.do")
+	public String clothing() {
+		return "product";
+>>>>>>> e566afe3087a0fb9bef03e6b9c8645367d6a5196
 	}
 
 }

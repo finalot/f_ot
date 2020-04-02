@@ -67,13 +67,14 @@ font-size: 9px !important;
 	<div class="wrap_header fixed-header2 trans-0-4"
 		style="max-height: 50px;">
 		<!-- Logo -->
+		<c:url var="chatIcon" value="/resources/images/icons/chat_icon.png"/>
 		<a href="index.jsp" class="logo"> <img src="<c:url value="/resources/images/icons/ot.png"/>"
 			alt="IMG-LOGO" style="max-height: 28px;">
 		</a> <a href="https://www.instagram.com/blackup_kr/" target="blank_"
 			class="topbar-social-item fa fa-instagram"></a> <a href="#"
 			class="chatBtn"><img
 			style="width: 15px; margin-left: 11px; margin-bottom: 4px;"
-			src="<c:url value="/resources/images/icons/chat_icon.png"/>"></a> <a href="cart.jsp"><img
+			src="${ chatIcon }"></a> <a href="cart.jsp"><img
 			style="width: 17px; margin-left: 15px; margin-bottom: 4px;"
 			src="<c:url value="/resources/images/icons/cart.png"/>"></a>
 
@@ -90,8 +91,7 @@ font-size: 9px !important;
 							<li><a href="product.jsp">랭킹20</a></li>
 						</ul></li>
 					<span class="linedivide1"></span>
-
-					<li><a href="index.jsp">CLOTHING</a>
+					<li><a href="clothing.do">CLOTHING</a>
 						<ul class="sub_menu"
 							style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 							<li><a href="index.jsp">티셔츠/나시</a></li>
@@ -314,7 +314,7 @@ font-size: 9px !important;
 							</ul></li>
 						<span class="linedivide1"></span>
 
-						<li><a href="index.jsp">CLOTHING</a>
+						<li><a href="clothing.do">CLOTHING</a>
 							<ul class="sub_menu"
 								style="border-radius: 10px; background: #000; filter: alpha(opacity = 7); opacity: 0.6; -moz-opacity: 0.1; width: 135%;">
 								<li><a href="index.jsp">티셔츠/나시</a></li>
@@ -522,7 +522,7 @@ font-size: 9px !important;
 
 
 					<li class="item-menu-mobile" style="background: black;"><a
-						href="index.jsp">CLOTHING</a>
+						href="clothing.do">CLOTHING</a>
 						<ul class="sub-menu">
 							<li><a href="index.jsp">티셔츠/나시</a></li>
 							<li><a href="index.jsp">맨투맨</a></li>
@@ -597,7 +597,7 @@ font-size: 9px !important;
 				</div>
 				<div>
 					<h4 class="helve">
-						<a href="/product/list.html?cate_no=108">CLOTHING</a>
+						<a href="clothing.do">CLOTHING</a>
 					</h4>
 					<ul>
 						<li><a href="index.jsp">티셔츠/나시</a></li>

@@ -154,7 +154,7 @@ margin-right: 3%;
 			
 
 			<!-- Total -->
-			<h3 class=" " style="position: relative;font-size: 12px;font-weight: 600; top:70px;left:-48px;">
+			<h3 class=" " style="position: relative;font-size: 12px;font-weight: 600; top:73px;left:-48px;">
 			결제 예정 금액</h3><br>
  
 			<div class="totalArea"style="display:flex;margin-top: 3%;">
@@ -302,7 +302,7 @@ margin-right: 3%;
 		</form>
 	</div>
 			<h3 class=" " style="position: relative;font-size: 12px;
-   font-weight: 600; top:89px;left:-48px;">결제 수단</h3><br>
+   font-weight: 600; top:91px;left:-48px;">결제 수단</h3><br>
     <p class = "required3" style="color:#000;">
       <img src = "/ot/resources/images/red.png" alt="필수">
       필수입력사항
@@ -449,7 +449,7 @@ margin-right: 3%;
 			</div>
 			<h3 class=" " style="    position: relative;
     font-size: 12px;
-    font-weight: 600; top:63px;left:-48px;">주문 정보</h3><br>
+    font-weight: 600; top:68px;left:-48px;">주문 정보</h3><br>
     <p class = "required2" style="color:#000;">
       <img src = "/ot/resources/images/red.png" alt="필수">
       필수입력사항

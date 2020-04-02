@@ -218,7 +218,7 @@
 							<ul class="header-cart-wrapitem">
 								<li class="header-cart-item">
 									<div class="header-cart-item-img">
-										<a href ="cart.jsp"><img src="<c:url value="/resources/images/item-cart-01.jpg"/>" alt="IMG" ></a>
+										<a href ="cart.do"><img src="<c:url value="/resources/images/item-cart-01.jpg"/>" alt="IMG" ></a>
 									</div>
 
 									<div class="header-cart-item-txt">
@@ -272,7 +272,7 @@
 							<div class="header-cart-buttons">
 								<div class="header-cart-wrapbtn">
 									<!-- Button -->
-									<a href="cart.jsp" class="hov1 s-text1 trans-0-4 yg_btn_141">
+									<a href="cart.do" class="hov1 s-text1 trans-0-4 yg_btn_141">
 										<span id="idMsg3">장바구니</span>
 									</a>
 								</div>

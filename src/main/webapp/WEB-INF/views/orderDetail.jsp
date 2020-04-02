@@ -199,6 +199,8 @@
 						&nbsp;&nbsp;
 						<button id="infodetail" 
 						class="more yg_btn_24 yg_btn3">내역보기</button>
+						<button id="receipt" 
+						class="more yg_btn_24 yg_btn3" onclick="showPopup();">영수증보기</button>
 						
 						
 					
@@ -414,8 +416,6 @@
 	</div>
 	
 	<a href="#none" class=" yg_btn_24 yg_btn32">현금영수증 신청</a>
-	<a href="#none" class=" yg_btn_24 yg_btn32">세금계산서 신청</a>
-	<a href="#none" class=" yg_btn_24 yg_btn32">거래명세서 인쇄</a>
 	
 	 <div class="" style="margin-left:25%;">
         <a href="mypage_list.jsp" class="hov1 s-text1 trans-0-4 yg_btn_144">주문목록보기</a>
@@ -596,6 +596,11 @@
 			    });
 	
 		 
+	</script>
+	
+	<script>
+	 function showPopup() {
+		 window.open("receipt.jsp", "a", "width=880, height=1000, left=150, top=50"); }
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>

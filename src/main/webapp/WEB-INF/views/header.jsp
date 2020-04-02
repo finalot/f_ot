@@ -692,7 +692,7 @@ font-size: 9px !important;
 						<ul>
 							<li><a href="/myshop/order/list.html">주문내역</a></li>
 							<li></li>
-							<li><a href="cart.jsp"
+							<li><a href="cart.do"
 								class="xans-element- xans-layout xans-layout-statelogoff ">장바구니
 									<span class="">(<span class="EC-Layout-Basket-count"></span>)
 								</span>

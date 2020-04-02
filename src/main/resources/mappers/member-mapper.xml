@@ -27,8 +27,15 @@
 		WHERE ID = #{id}
 		AND M_STATUS='Y' -->
 		
-	</select>
-	<!--  	
+</select>
+
+<select id="findId" parameterType="Member" resultMap="memberResultSet">
+	SELECT * FROM MEMBER
+	WHERE MEM_NAME=#{memName}
+	AND MEM_SSN=#{memSsn}
+</select>
+
+<!--  	
 <insert id="insertMember" parameterType="Member">
 		INSERT INTO MEMBER
 		VALUES(#{id},#{pwd},#{name},#{email},#{gender},

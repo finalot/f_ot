@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,37 +12,37 @@
     <meta name="keywords" content="au theme template">
 
  <!--===============================================================================================-->
-	<link rel="icon" type="image/png" href="images/icon/favicon.png"/>
+	<link rel="icon" type="image/png" href="/ot/resources/aimages/icon/favicon.png"/>
 
     <!-- Title Page-->
     <title>oT. ADMIN</title>
 
     <!-- Fontfaces CSS-->
-    <link href="css/font-face.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
-    <link href="vendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
-    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/acss/font-face.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/font-awesome-5/css/fontawesome-all.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
 
     <!-- Bootstrap CSS-->
-    <link href="vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
 
     <!-- Vendor CSS-->
-    <link href="vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
-    <link href="vendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
-    <link href="vendor/wow/animate.css" rel="stylesheet" media="all">
-    <link href="vendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
-    <link href="vendor/slick/slick.css" rel="stylesheet" media="all">
-    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
-    <link href="vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/css-hamburgers/hamburgers.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/slick/slick.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/avendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
 
     <!-- Main CSS-->
-    <link href="css/theme.css" rel="stylesheet" media="all">
+    <link href="/ot/resources/acss/theme.css" rel="stylesheet" media="all">
 </head>
 <body class="animsition">
 	<div class="page-wrapper">
-
-      <%@ include file="a_header.jsp" %>
+		<jsp:include page="a_header.jsp"/>
  <!-- MENU SIDEBAR-->
+ 	
         <aside class="menu-sidebar d-none d-lg-block">
             <div class="logo">
                 <a href="todaymain.jsp">
@@ -52,48 +53,54 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="active has-sub"> 
-                            <!-- active has-sub 파란색 -->
+                            <%-- <!-- active has-sub 파란색 --> --%>
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-bar-chart-o"></i>통계</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="todaymain.jsp">당일현황</a>
+                                    <a href="todaymain.do">당일현황</a>
                                 </li>
                                 <li>
-                                    <a href="todaychart.jsp">매출그래프</a>
+                                    <a href="todaychart.do">매출그래프</a>
                                 </li>
                                 <li>
-                                    <a href="best.jsp">상품판매순위</a>
+                                    <a href="best.do">상품판매순위</a>
                                 </li>
                             </ul>
                         </li>
                         
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
-                                <i class="fa fa-truck"></i>회원 &nbsp;/&nbsp;주문</a>
+                                <i class="fa fa-truck"></i>회원 </a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="customer.jsp">회원 관리</a>
-                                </li>
-                                <li>
-                                    <a href="order.jsp">주문 관리</a>
+                                    <a href="customer.do">회원 관리</a>
                                 </li>
                             </ul>
                         </li>
                         
+                         <li class="has-sub">
+                            <a class="js-arrow" href="#">
+                                <i class="fa fa-truck"></i>주문 </a>
+                            <ul class="list-unstyled navbar__sub-list js-sub-list">
+                                <li>
+                                    <a href="order.do">주문 관리</a>
+                                </li>
+                            </ul>
+                        </li>
                         
                         <li class="has-sub">
                             <a class="js-arrow" href="#">
                                 <i class="fa fa-shopping-cart"></i>상품관리</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             	<li>
-                                    <a href="category.jsp">카테고리관리</a>
+                                    <a href="category.do">카테고리관리</a>
                                 </li>
                                 <li>
-                                    <a href="productAdd.jsp">상품등록</a>
+                                    <a href="productAdd.do">상품등록</a>
                                 </li>
                                 <li>
-                                    <a href="productList.jsp">상품관리</a>
+                                    <a href="productList.do">상품관리</a>
                                 </li>
                             </ul>
                         </li>
@@ -103,10 +110,10 @@
                                 <i class="fa fa-bullhorn"></i>이벤트&nbsp;/&nbsp;쿠폰</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                                 <li>
-                                    <a href="eventAdd.jsp">이벤트/쿠폰 등록</a>
+                                    <a href="eventAdd.do">이벤트/쿠폰 등록</a>
                                 </li>
                                 <li>
-                                    <a href="eventList.jsp">이벤트/쿠폰 관리</a>
+                                    <a href="eventList.do">이벤트/쿠폰 관리</a>
                                 </li>
                             </ul>
                         </li>
@@ -125,19 +132,19 @@
                                 <i class="fa fa-shopping-cart"></i>Q & A</a>
                             <ul class="list-unstyled navbar__sub-list js-sub-list">
                             	<li>
-                                    <a href="">상품문의</a>
+                                    <a href="QnA_Product.do">상품문의</a>
                                 </li>
                                 <li>
-                                    <a href="productAdd.jsp">배송전 문의</a>
+                                    <a href="QnA_delivery_cancel.do">배송전 문의</a>
                                 </li>
                                 <li>
-                                    <a href="productList.jsp">배송후 문의</a>
+                                    <a href="productReturn.do">배송후 문의</a>
                                 </li>
                                  <li>
-                                    <a href="productList.jsp">입금확인/입급자 변경 문의</a>
+                                    <a href="QnA_bank_insert.do">입금확인/입급자 변경 문의</a>
                                 </li>
                                  <li>
-                                    <a href="productList.jsp">상품불량 및 오배송 문의</a>
+                                    <a href="QnA_bad_product.do">상품불량 및 오배송 문의</a>
                                 </li>
                             </ul>
                         </li>
@@ -167,7 +174,7 @@
        <!-- END WELCOME-->
 
         <!-- STATISTIC-->
-        <section class="statistic statistic2" onclick="location.href='status.jsp'">
+        <section class="statistic statistic2" onclick="location.href='status.do'">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-lg-3">
@@ -223,7 +230,7 @@
                     <div class="col-md-6 col-lg-4" style="margin-left: 15%">
                         <!-- CHART-->
                         <div class="statistic-chart-1" 
-                        	style="margin-left:-35%; width:140%; height:auto;" onclick="location.href='todaychart.jsp'">
+                        	style="margin-left:-35%; width:140%; height:auto;" onclick="location.href='todaychart.do'">
                             <h3 class="title-3 m-b-30">일별 판매량</h3>
                             <div class="chart-wrap">
                                 <canvas id="widgetChart5"></canvas>
@@ -237,7 +244,7 @@
                     </div>
                     <div class="col-md-6 col-lg-4" style="margin-left: 1%;">
                         <!-- TOP CAMPAIGN-->
-                        <div class="top-campaign" style="width:140%; height:auto;" onclick="location.href='best.jsp'">
+                        <div class="top-campaign" style="width:140%; height:auto;" onclick="location.href='best.do'">
                             <h3 class="title-3 m-b-30">인기 상품</h3>
                             <div class="table-responsive">
                                 <table class="table table-top-campaign">
@@ -277,27 +284,27 @@
 	</div>
 
     <!-- Jquery JS-->
-    <script src="vendor/jquery-3.2.1.min.js"></script>
+    <script src="/ot/resources/avendor/jquery-3.2.1.min.js"></script>
     <!-- Bootstrap JS-->
-    <script src="vendor/bootstrap-4.1/popper.min.js"></script>
-    <script src="vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <script src="/ot/resources/avendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="/ot/resources/avendor/bootstrap-4.1/bootstrap.min.js"></script>
     <!-- Vendor JS       -->
-    <script src="vendor/slick/slick.min.js">
+    <script src="/ot/resources/avendor/slick/slick.min.js">
     </script>
-    <script src="vendor/wow/wow.min.js"></script>
-    <script src="vendor/animsition/animsition.min.js"></script>
-    <script src="vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    <script src="/ot/resources/avendor/wow/wow.min.js"></script>
+    <script src="/ot/resources/avendor/animsition/animsition.min.js"></script>
+    <script src="/ot/resources/avendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
     </script>
-    <script src="vendor/counter-up/jquery.waypoints.min.js"></script>
-    <script src="vendor/counter-up/jquery.counterup.min.js">
+    <script src="/ot/resources/avendor/counter-up/jquery.waypoints.min.js"></script>
+    <script src="/ot/resources/avendor/counter-up/jquery.counterup.min.js">
     </script>
-    <script src="vendor/circle-progress/circle-progress.min.js"></script>
-    <script src="vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
-    <script src="vendor/chartjs/Chart.bundle.min.js"></script>
-    <script src="vendor/select2/select2.min.js"></script>
+    <script src="/ot/resources/avendor/circle-progress/circle-progress.min.js"></script>
+    <script src="/ot/resources/avendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="/ot/resources/avendor/chartjs/Chart.bundle.min.js"></script>
+    <script src="/ot/resources/avendor/select2/select2.min.js"></script>
 
     <!-- Main JS-->
-    <script src="js/main.js"></script>
+    <script src="/ot/resources/ajs/main.js"></script>
     </div>
 
 </body>

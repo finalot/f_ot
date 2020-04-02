@@ -521,7 +521,7 @@
 <body class="animsition" style="overflow-x:hidden;">
 
 	<!-- Header -->
-	<jsp:include page="header.jsp">
+	<jsp:include page="header.jsp"/>
 
 	<!-- breadcrumb -->
 	<div class="bread-crumb bgwhite flex-w p-l-52 p-r-15 p-t-30 p-l-15-sm">
@@ -3425,7 +3425,7 @@ function qna(){
 
 <div style=" width: 160%; margin-left:-30%;">
 <!-- Footer -->
-<jsp:include page="footer.jsp">
+<jsp:include page="footer.jsp"/>
 </div>
 
 

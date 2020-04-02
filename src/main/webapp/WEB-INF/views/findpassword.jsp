@@ -8,12 +8,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Ot</title>
-    <link rel="icon" href="img/favicon.png">
+    <link rel="icon" href="/ot/resources/img/favicon.png">
     <!-- Bootstrap CSS -->
-   <link rel="stylesheet" href="./css/Login_bootstrap.min.css">
+   <link rel="stylesheet" href="/ot/resources/css/Login_bootstrap.min.css">
     <!-- style CSS -->
-    <link rel="stylesheet" href="./css/Login_style.css">
-    <link rel="stylesheet" href="./css/popup.css">
+    <link rel="stylesheet" href="/ot/resources/css/Login_style.css">
+    <link rel="stylesheet" href="/ot/resources/css/popup.css">
  <style>
 #check,#findpwd{
 	display: none;
@@ -39,15 +39,15 @@
                                
                                <div class="col-md-12 form-group p_star">
                                     <span style="padding-right: 20px;">&nbsp; 이름 :</span> <input style="display: inline-block;
-                                    width: 50%;" type="text" class="form-control" id="name" name="name" value="">
+                                    width: 50%;" type="text" class="form-control" id="memName" name="memName" value="">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
                                     <span style="padding-right: 20px;">아이디 :</span> <input style="display: inline-block;
-                                    width: 50%;" type="text" class="form-control" id="MemberId" name="MemberId" value="">
+                                    width: 50%;" type="text" class="form-control" id=memId name="memId" value="">
                                 </div>
                                 <div class="col-md-12 form-group p_star">
                                    <span style="padding-right: 20px;">이메일 :</span><input style="display: inline-block;
-                                   width: 50%;" type="email" class="form-control" id="email" name="email" value="">
+                                   width: 50%;" type="email" class="form-control" id="memEmail" name="memEmail" value="">
                                 </div>
                                 
                                 <div class="col-md-12 form-group">
@@ -103,9 +103,9 @@
         layer_popup($href);
 	  
         $.ajax({
-		  url : "idDuplicate.me",
-		  type: "post",
-		  data : {name : $('#name').val(), MemberId : $('#MemberId').val(),email : $('#email').val()},
+		  url : "findpassword.do",
+		  datatype="json",
+		  data : {memName : $('#memName').val(), memId : $('#memId').val(), memEmail : $('#memEmail').val()},
 		  success : function(data){
 			  if(data != 'null'){
 			 $('#check_ment').html('이메일로 인증문자가 발송되었습니다  <br>인증문자를 확인해 주세요.'); 	

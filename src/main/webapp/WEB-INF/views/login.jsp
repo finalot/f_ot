@@ -46,13 +46,13 @@
                                       <a href="#layer2"  id="loginBtn"  class="btn_3">
                                         log in
                                     </a> 
-                                    <a style="margin: 0px; background: white;
+                                    <a href="joinView.do" style="margin: 0px; background: white;
                                     color: black;" type="submit"  class="btn_3">
                                         join us
                                     </a>
                                     <div style="display: felx">
-                                    <a style="margin-top: 10px;margin-right: 4%;" class="lost_pass" href="findId.jsp">forget ID?</a>
-                                    <a style="margin-top: 10px;margin-right: 15%;padding-right: 13%;" class="lost_pass" href="findpassword.jsp">forget Password?</a>
+                                    <a style="margin-top: 10px;margin-right: 4%;" class="lost_pass" href="findIdView.do">forget ID?</a>
+                                    <a style="margin-top: 10px;margin-right: 15%;padding-right: 13%;" class="lost_pass" href="findpasswordView.do">forget Password?</a>
                                     </div>
                                 </div>
                         </div>
